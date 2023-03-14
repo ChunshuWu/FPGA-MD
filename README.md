@@ -32,7 +32,8 @@ Dask installation can be exempted if two boards are directly connected, but the 
 ### Host Communication Establishment
 Open a terminal on node 0, run  
 `$dask-scheduler`  
-A scheduler url will show up below, copy it.  
+A scheduler url will show up below, copy it (see the figure below).  
+<img src="https://github.com/ChunshuWu/FPGA-MD/blob/main/dask_scheduler.png" width=1500> 
   
 Then open a terminal for each node, run  
 `$dask-worker <scheduler url>`  
