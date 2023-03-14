@@ -45,6 +45,10 @@ Open another terminal for node 0, run
 `dump group` can be from 0 to 7, which is to configure which group of cells (4 cells for each group) would the user like to dump. For the demo, we recommend trying `dump group = 0` and `number of iterations = 1~10000`.  
   
 The resulting data are dumped to `FPGA-MD/InterFPGA_MD/Notebooks/recv_local_bank_<dump group ID>_<number of iterations>.txt` and `recv_remote_bank_<dump group ID>_<number of iterations>.txt`.  
+  
+To restart, run  
+`xbutil reset -d 0`  
+on both nodes to reset the FPGAs. 
 ## For Developers
 To compile, run  
 `$FPGA-MD/InterFPGA_MD/compile.sh`  
