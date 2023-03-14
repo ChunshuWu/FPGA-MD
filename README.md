@@ -1,5 +1,5 @@
 # FPGA-MD
-This project is developed based on [Xilinx XUP project](https://github.com/Xilinx/xup_vitis_network_example), and implemented for Alveo U280 boards. 
+This project is developed based on [Xilinx XUP project](https://github.com/Xilinx/xup_vitis_network_example), and implemented for Alveo U280 boards.  
 The design is tested on Massachusetts cluster on [cloudlab](https://www.cloudlab.us/)  
 A simple demo is provided (for 2 U280 boards). 
 ## Overview
