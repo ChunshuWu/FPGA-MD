@@ -27,15 +27,15 @@ ipython
 numpy: 1.19  
 ```
 Dask installation can be exempted if two boards are directly connected, but the host code may be subject to changes. 
-
+  
 ### Host Communication Establishment
-For [cloudlab](https://www.cloudlab.us/) users, open a terminal for node 0, run  
+Open a terminal on node 0, run  
 `$dask-scheduler`  
 A scheduler url will show up below, copy it.  
   
-Then open 2 terminals for both nodes, run  
+Then open a terminal for each node, run  
 `$dask-worker <scheduler url>`  
-and keep all 3 terminals on hold.  
+on each node and keep all 3 terminals on hold.  
   
 ### Run the Demo
 Open another terminal for node 0, run  
