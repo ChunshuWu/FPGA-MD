@@ -37,6 +37,7 @@ Then open 2 terminals for both nodes, run
 `$dask-worker <scheduler url>`  
 and keep all 3 terminals on hold.  
   
+### Run the Demo
 Open another terminal for node 0, run  
 `$python3 FPGA-MD/InterFPGA_MD/Notebooks/run.py <scheduler url> <dump group ID> <number of iterations>`  
 `dump group` can be from 0 to 7, which is to configure which group of cells (4 cells for each group) would the user like to dump. For the demo, we recommend trying `dump group = 0` and `number of iterations = 1~10000`.  
