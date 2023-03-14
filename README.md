@@ -16,6 +16,7 @@ For [cloudlab](https://www.cloudlab.us/) users:
 Book 2 nodes with Alveo U280 FPGAs on a switch, run  
 `$FPGA-MD/InterFPGA_MD/upload.sh <node ID>`  
 for each node to upload host code and the `.xclbin` file onto the nodes.  
+Note that the username and server IP in `upload.sh` need to be modified.  
   
 The environment can be automatically configured with FPGA-MD/InterFPGA_MD/Notebooks/config.sh on [cloudlab](https://www.cloudlab.us/). To manually configure, we recommend having the following packages installed:  
 ```
