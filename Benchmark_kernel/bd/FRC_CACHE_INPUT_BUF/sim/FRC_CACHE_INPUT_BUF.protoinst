@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"FRC_CACHE_INPUT_BUF": {
+			"proto_instances": {
+			}
+		}
+	}
+}

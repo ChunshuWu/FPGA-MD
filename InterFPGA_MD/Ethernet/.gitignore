@@ -1,0 +1,7 @@
+kernel*.xml
+tmp_cmac*/
+_x.*
+packaged_kernel*/
+*.log
+*.jou
+src/cmac_top*.v

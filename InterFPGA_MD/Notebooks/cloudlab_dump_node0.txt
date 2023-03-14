@@ -1,0 +1,144 @@
+local in traffic size in 512 0.0
+remote out traffic size in 512 16.0
+remote in traffic size in 512 16.0
+local out traffic size in 512 16.0
+
+MD iteration timed out
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Step 0 received. 
+
+Local still receiving:  1
+Local still receiving:  1
+
+local in traffic size in 512 0.0
+remote out traffic size in 512 16.0
+remote in traffic size in 512 16.0
+local out traffic size in 512 16.0
+
+RegisterMap {
+  CTRL = Register(AP_START=1, AP_DONE=0, AP_IDLE=0, AP_READY=0, AUTO_RESTART=0),
+  MD_state = Register(value=3),
+  dest_id = Register(value=7),
+  number_packets = Register(value=0),
+  init_id = Register(value=1),
+  init_step = Register(value=1),
+  reset_fsm = Register(value=0),
+  debug_fsms = Register(value=0),
+  out_traffic_cycles_pos = Register(value=16),
+  out_traffic_bytes_pos = Register(value=1024),
+  out_traffic_packets_pos = Register(value=1),
+  in_traffic_cycles_pos = Register(value=0),
+  in_traffic_bytes_pos = Register(value=0),
+  in_traffic_packets_pos = Register(value=0),
+  summary_cycles = Register(value=0),
+  summary_bytes = Register(value=0),
+  summary_packets = Register(value=0),
+  debug_reset = Register(value=0),
+  out_traffic_cycles_frc = Register(value=0),
+  out_traffic_bytes_frc = Register(value=0),
+  out_traffic_packets_frc = Register(value=0),
+  in_traffic_cycles_frc = Register(value=0),
+  in_traffic_bytes_frc = Register(value=0),
+  in_traffic_packets_frc = Register(value=0),
+  fifo_pos_full = Register(value=0),
+  fifo_frc_full = Register(value=0),
+  all_dirty = Register(value=0),
+  disp_back_pressure = Register(value=0),
+  home_buf_almost_full = Register(value=0),
+  nb_buf_almost_full = Register(value=0),
+  all_frc_output_ring_buf_empty = Register(value=1),
+  all_frc_output_ring_done = Register(value=1),
+  all_home_buf_empty = Register(value=1),
+  all_nb_buf_empty = Register(value=1),
+  all_disp_buf_empty = Register(value=1),
+  all_MU_buf_empty = Register(value=1),
+  chk_nb_frc = Register(value=0),
+  chk_home_frc = Register(value=0),
+  chk_MU_vel_out = Register(value=0),
+  chk_MU_vel_produced = Register(value=0),
+  chk_MU_offset_in = Register(value=0),
+  MU_num_particles = Register(value=0),
+  MU_rd_cnt = Register(value=0),
+  iter_cnt = Register(value=0),
+  iter_target = Register(value=1000),
+  operation_cycle_cnt = Register(value=2438810283),
+  MU_migration_flag = Register(value=0),
+  num_particles_0 = Register(value=0),
+  num_particles_1 = Register(value=0),
+  num_particles_2 = Register(value=0),
+  num_particles_3 = Register(value=0),
+  num_particles_4 = Register(value=0),
+  num_particles_5 = Register(value=0),
+  num_particles_6 = Register(value=0),
+  num_particles_7 = Register(value=0)
+}
+RegisterMap {
+  CTRL = Register(AP_START=1, AP_DONE=0, AP_IDLE=0, AP_READY=0, AUTO_RESTART=0),
+  MD_state = Register(value=3),
+  dest_id = Register(value=1),
+  number_packets = Register(value=0),
+  init_id = Register(value=7),
+  init_step = Register(value=1),
+  reset_fsm = Register(value=0),
+  debug_fsms = Register(value=0),
+  out_traffic_cycles_pos = Register(value=16),
+  out_traffic_bytes_pos = Register(value=1024),
+  out_traffic_packets_pos = Register(value=1),
+  in_traffic_cycles_pos = Register(value=16),
+  in_traffic_bytes_pos = Register(value=1024),
+  in_traffic_packets_pos = Register(value=1),
+  summary_cycles = Register(value=0),
+  summary_bytes = Register(value=0),
+  summary_packets = Register(value=0),
+  debug_reset = Register(value=0),
+  out_traffic_cycles_frc = Register(value=0),
+  out_traffic_bytes_frc = Register(value=0),
+  out_traffic_packets_frc = Register(value=0),
+  in_traffic_cycles_frc = Register(value=0),
+  in_traffic_bytes_frc = Register(value=0),
+  in_traffic_packets_frc = Register(value=0),
+  fifo_pos_full = Register(value=0),
+  fifo_frc_full = Register(value=0),
+  all_dirty = Register(value=0),
+  disp_back_pressure = Register(value=0),
+  home_buf_almost_full = Register(value=0),
+  nb_buf_almost_full = Register(value=0),
+  all_frc_output_ring_buf_empty = Register(value=1),
+  all_frc_output_ring_done = Register(value=1),
+  all_home_buf_empty = Register(value=1),
+  all_nb_buf_empty = Register(value=1),
+  all_disp_buf_empty = Register(value=1),
+  all_MU_buf_empty = Register(value=1),
+  chk_nb_frc = Register(value=0),
+  chk_home_frc = Register(value=0),
+  chk_MU_vel_out = Register(value=0),
+  chk_MU_vel_produced = Register(value=0),
+  chk_MU_offset_in = Register(value=0),
+  MU_num_particles = Register(value=0),
+  MU_rd_cnt = Register(value=0),
+  iter_cnt = Register(value=0),
+  iter_target = Register(value=1000),
+  operation_cycle_cnt = Register(value=2561864983),
+  MU_migration_flag = Register(value=0),
+  num_particles_0 = Register(value=15),
+  num_particles_1 = Register(value=15),
+  num_particles_2 = Register(value=15),
+  num_particles_3 = Register(value=15),
+  num_particles_4 = Register(value=0),
+  num_particles_5 = Register(value=0),
+  num_particles_6 = Register(value=0),
+  num_particles_7 = Register(value=0)
+}

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"FP_ADD_XYZ_D3": {
+			"proto_instances": {
+			}
+		}
+	}
+}

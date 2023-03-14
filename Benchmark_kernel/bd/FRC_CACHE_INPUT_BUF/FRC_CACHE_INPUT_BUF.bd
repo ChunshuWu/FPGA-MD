@@ -1,0 +1,147 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC60A361ED61A107A",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "FRC_CACHE_INPUT_BUF",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "frc_fifo": ""
+    },
+    "ports": {
+      "almost_full": {
+        "direction": "O"
+      },
+      "buf_empty": {
+        "direction": "O"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "FRC_CACHE_INPUT_BUF_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rd_data": {
+        "direction": "O",
+        "left": "104",
+        "right": "0"
+      },
+      "rd_en": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "wr_data": {
+        "direction": "I",
+        "left": "104",
+        "right": "0"
+      },
+      "wr_en": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "frc_fifo": {
+        "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+        "xci_name": "FRC_CACHE_INPUT_BUF_frc_fifo_0",
+        "xci_path": "ip/FRC_CACHE_INPUT_BUF_frc_fifo_0/FRC_CACHE_INPUT_BUF_frc_fifo_0.xci",
+        "inst_hier_path": "frc_fifo",
+        "parameters": {
+          "Full_Threshold_Assert_Value": {
+            "value": "500"
+          },
+          "Input_Data_Width": {
+            "value": "105"
+          },
+          "Input_Depth": {
+            "value": "512"
+          },
+          "Performance_Options": {
+            "value": "First_Word_Fall_Through"
+          },
+          "Programmable_Full_Type": {
+            "value": "Single_Programmable_Full_Threshold_Constant"
+          },
+          "Use_Embedded_Registers": {
+            "value": "true"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "frc_fifo/clk"
+        ]
+      },
+      "din_0_1": {
+        "ports": [
+          "wr_data",
+          "frc_fifo/din"
+        ]
+      },
+      "home_frc_fifo_dout": {
+        "ports": [
+          "frc_fifo/dout",
+          "rd_data"
+        ]
+      },
+      "home_frc_fifo_empty": {
+        "ports": [
+          "frc_fifo/empty",
+          "buf_empty"
+        ]
+      },
+      "home_frc_fifo_prog_full": {
+        "ports": [
+          "frc_fifo/prog_full",
+          "almost_full"
+        ]
+      },
+      "rd_en_0_1": {
+        "ports": [
+          "rd_en",
+          "frc_fifo/rd_en"
+        ]
+      },
+      "srst_0_1": {
+        "ports": [
+          "rst",
+          "frc_fifo/srst"
+        ]
+      },
+      "wr_en_1_1": {
+        "ports": [
+          "wr_en",
+          "frc_fifo/wr_en"
+        ]
+      }
+    }
+  }
+}

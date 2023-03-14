@@ -1,0 +1,158 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF98505EC9B056AE4",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "POS_CACHE",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "blk_mem_gen_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "POS_CACHE_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "i_data": {
+        "direction": "I",
+        "left": "71",
+        "right": "0"
+      },
+      "i_rd_addr": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "i_rd_en": {
+        "direction": "I"
+      },
+      "i_wr_addr": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "i_wr_en": {
+        "direction": "I"
+      },
+      "o_data": {
+        "direction": "O",
+        "left": "71",
+        "right": "0"
+      }
+    },
+    "components": {
+      "blk_mem_gen_1": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "POS_CACHE_blk_mem_gen_1_0",
+        "xci_path": "ip/POS_CACHE_blk_mem_gen_1_0/POS_CACHE_blk_mem_gen_1_0.xci",
+        "inst_hier_path": "blk_mem_gen_1",
+        "parameters": {
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Memory_Type": {
+            "value": "Simple_Dual_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "PRIM_type_to_Implement": {
+            "value": "URAM"
+          },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTB_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "512"
+          },
+          "Write_Width_A": {
+            "value": "72"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "nets": {
+      "addra_0_1": {
+        "ports": [
+          "i_wr_addr",
+          "blk_mem_gen_1/addra"
+        ]
+      },
+      "addrb_0_1": {
+        "ports": [
+          "i_rd_addr",
+          "blk_mem_gen_1/addrb"
+        ]
+      },
+      "blk_mem_gen_0_doutb": {
+        "ports": [
+          "blk_mem_gen_1/doutb",
+          "o_data"
+        ]
+      },
+      "clka_0_1": {
+        "ports": [
+          "clk",
+          "blk_mem_gen_1/clka",
+          "blk_mem_gen_1/clkb"
+        ]
+      },
+      "dina_0_1": {
+        "ports": [
+          "i_data",
+          "blk_mem_gen_1/dina"
+        ]
+      },
+      "ena_0_1": {
+        "ports": [
+          "i_wr_en",
+          "blk_mem_gen_1/ena",
+          "blk_mem_gen_1/wea"
+        ]
+      },
+      "enb_0_1": {
+        "ports": [
+          "i_rd_en",
+          "blk_mem_gen_1/enb"
+        ]
+      }
+    }
+  }
+}

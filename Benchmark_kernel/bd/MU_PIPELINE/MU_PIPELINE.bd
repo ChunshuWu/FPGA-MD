@@ -1,0 +1,891 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x86338D9C76F85F76",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "MU_PIPELINE",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "acceleration_to_vel_x": "",
+      "acceleration_to_vel_y": "",
+      "acceleration_to_vel_z": "",
+      "delay_signals_D13": "",
+      "frc_to_acceleration_x": "",
+      "frc_to_acceleration_y": "",
+      "frc_to_acceleration_z": "",
+      "new_vel_x_D4": "",
+      "new_vel_y_D4": "",
+      "new_vel_z_D4": "",
+      "vel_to_dx": "",
+      "vel_to_dy": "",
+      "vel_to_dz": "",
+      "vel_x_D4": "",
+      "vel_y_D4": "",
+      "vel_z_D4": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "MU_PIPELINE_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_coeff": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "i_delay_signals": {
+        "type": "data",
+        "direction": "I",
+        "left": "73",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_fx": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "i_fy": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "i_fz": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "i_time_step": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "i_valid": {
+        "direction": "I"
+      },
+      "i_vx": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_vy": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_vz": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "o_data_valid": {
+        "direction": "O"
+      },
+      "o_delay_signals": {
+        "type": "data",
+        "direction": "O",
+        "left": "73",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 74} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 74}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "o_dx": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "o_dy": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "o_dz": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "o_vx": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 32}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "o_vy": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 32}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "o_vz": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 32}",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "acceleration_to_vel_x": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_acceleration_to_vel_x_0",
+        "xci_path": "ip/MU_PIPELINE_acceleration_to_vel_x_0/MU_PIPELINE_acceleration_to_vel_x_0.xci",
+        "inst_hier_path": "acceleration_to_vel_x",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "5"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "FMA"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "acceleration_to_vel_y": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_acceleration_to_vel_y_0",
+        "xci_path": "ip/MU_PIPELINE_acceleration_to_vel_y_0/MU_PIPELINE_acceleration_to_vel_y_0.xci",
+        "inst_hier_path": "acceleration_to_vel_y",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "5"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "FMA"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "acceleration_to_vel_z": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_acceleration_to_vel_z_0",
+        "xci_path": "ip/MU_PIPELINE_acceleration_to_vel_z_0/MU_PIPELINE_acceleration_to_vel_z_0.xci",
+        "inst_hier_path": "acceleration_to_vel_z",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "5"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "FMA"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "delay_signals_D13": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "MU_PIPELINE_delay_signals_D13_0",
+        "xci_path": "ip/MU_PIPELINE_delay_signals_D13_0/MU_PIPELINE_delay_signals_D13_0.xci",
+        "inst_hier_path": "delay_signals_D13",
+        "parameters": {
+          "AsyncInitVal": {
+            "value": "00000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "DefaultData": {
+            "value": "00000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "Depth": {
+            "value": "13"
+          },
+          "Width": {
+            "value": "74"
+          }
+        }
+      },
+      "frc_to_acceleration_x": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_frc_to_acceleration_x_0",
+        "xci_path": "ip/MU_PIPELINE_frc_to_acceleration_x_0/MU_PIPELINE_frc_to_acceleration_x_0.xci",
+        "inst_hier_path": "frc_to_acceleration_x",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "frc_to_acceleration_y": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_frc_to_acceleration_y_0",
+        "xci_path": "ip/MU_PIPELINE_frc_to_acceleration_y_0/MU_PIPELINE_frc_to_acceleration_y_0.xci",
+        "inst_hier_path": "frc_to_acceleration_y",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "frc_to_acceleration_z": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_frc_to_acceleration_z_0",
+        "xci_path": "ip/MU_PIPELINE_frc_to_acceleration_z_0/MU_PIPELINE_frc_to_acceleration_z_0.xci",
+        "inst_hier_path": "frc_to_acceleration_z",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "new_vel_x_D4": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "MU_PIPELINE_new_vel_x_D4_0",
+        "xci_path": "ip/MU_PIPELINE_new_vel_x_D4_0/MU_PIPELINE_new_vel_x_D4_0.xci",
+        "inst_hier_path": "new_vel_x_D4",
+        "parameters": {
+          "Depth": {
+            "value": "4"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "new_vel_y_D4": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "MU_PIPELINE_new_vel_y_D4_0",
+        "xci_path": "ip/MU_PIPELINE_new_vel_y_D4_0/MU_PIPELINE_new_vel_y_D4_0.xci",
+        "inst_hier_path": "new_vel_y_D4",
+        "parameters": {
+          "Depth": {
+            "value": "4"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "new_vel_z_D4": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "MU_PIPELINE_new_vel_z_D4_0",
+        "xci_path": "ip/MU_PIPELINE_new_vel_z_D4_0/MU_PIPELINE_new_vel_z_D4_0.xci",
+        "inst_hier_path": "new_vel_z_D4",
+        "parameters": {
+          "Depth": {
+            "value": "4"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "vel_to_dx": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_vel_to_dx_0",
+        "xci_path": "ip/MU_PIPELINE_vel_to_dx_0/MU_PIPELINE_vel_to_dx_0.xci",
+        "inst_hier_path": "vel_to_dx",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Both"
+          },
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "vel_to_dy": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_vel_to_dy_0",
+        "xci_path": "ip/MU_PIPELINE_vel_to_dy_0/MU_PIPELINE_vel_to_dy_0.xci",
+        "inst_hier_path": "vel_to_dy",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Both"
+          },
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "vel_to_dz": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "MU_PIPELINE_vel_to_dz_0",
+        "xci_path": "ip/MU_PIPELINE_vel_to_dz_0/MU_PIPELINE_vel_to_dz_0.xci",
+        "inst_hier_path": "vel_to_dz",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Both"
+          },
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "vel_x_D4": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "MU_PIPELINE_vel_x_D4_0",
+        "xci_path": "ip/MU_PIPELINE_vel_x_D4_0/MU_PIPELINE_vel_x_D4_0.xci",
+        "inst_hier_path": "vel_x_D4",
+        "parameters": {
+          "Depth": {
+            "value": "4"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "vel_y_D4": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "MU_PIPELINE_vel_y_D4_0",
+        "xci_path": "ip/MU_PIPELINE_vel_y_D4_0/MU_PIPELINE_vel_y_D4_0.xci",
+        "inst_hier_path": "vel_y_D4",
+        "parameters": {
+          "Depth": {
+            "value": "4"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "vel_z_D4": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "MU_PIPELINE_vel_z_D4_0",
+        "xci_path": "ip/MU_PIPELINE_vel_z_D4_0/MU_PIPELINE_vel_z_D4_0.xci",
+        "inst_hier_path": "vel_z_D4",
+        "parameters": {
+          "Depth": {
+            "value": "4"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      }
+    },
+    "nets": {
+      "D_0_1": {
+        "ports": [
+          "i_vx",
+          "vel_x_D4/D"
+        ]
+      },
+      "D_0_2": {
+        "ports": [
+          "i_delay_signals",
+          "delay_signals_D13/D"
+        ]
+      },
+      "D_1_1": {
+        "ports": [
+          "i_vz",
+          "vel_z_D4/D"
+        ]
+      },
+      "D_2_1": {
+        "ports": [
+          "i_vy",
+          "vel_y_D4/D"
+        ]
+      },
+      "acceleration_to_vel_x_m_axis_result_tdata": {
+        "ports": [
+          "acceleration_to_vel_x/m_axis_result_tdata",
+          "new_vel_x_D4/D",
+          "vel_to_dx/s_axis_a_tdata"
+        ]
+      },
+      "acceleration_to_vel_y_m_axis_result_tdata": {
+        "ports": [
+          "acceleration_to_vel_y/m_axis_result_tdata",
+          "new_vel_y_D4/D",
+          "vel_to_dy/s_axis_a_tdata"
+        ]
+      },
+      "acceleration_to_vel_y_m_axis_result_tvalid": {
+        "ports": [
+          "acceleration_to_vel_y/m_axis_result_tvalid",
+          "vel_to_dx/s_axis_a_tvalid",
+          "vel_to_dx/s_axis_b_tvalid",
+          "vel_to_dy/s_axis_a_tvalid",
+          "vel_to_dy/s_axis_b_tvalid",
+          "vel_to_dz/s_axis_a_tvalid",
+          "vel_to_dz/s_axis_b_tvalid"
+        ]
+      },
+      "acceleration_to_vel_z_m_axis_result_tdata": {
+        "ports": [
+          "acceleration_to_vel_z/m_axis_result_tdata",
+          "new_vel_z_D4/D",
+          "vel_to_dz/s_axis_a_tdata"
+        ]
+      },
+      "aclk_0_1": {
+        "ports": [
+          "clk",
+          "acceleration_to_vel_x/aclk",
+          "acceleration_to_vel_y/aclk",
+          "acceleration_to_vel_z/aclk",
+          "delay_signals_D13/CLK",
+          "frc_to_acceleration_x/aclk",
+          "frc_to_acceleration_y/aclk",
+          "frc_to_acceleration_z/aclk",
+          "new_vel_x_D4/CLK",
+          "new_vel_y_D4/CLK",
+          "new_vel_z_D4/CLK",
+          "vel_to_dx/aclk",
+          "vel_to_dy/aclk",
+          "vel_to_dz/aclk",
+          "vel_x_D4/CLK",
+          "vel_y_D4/CLK",
+          "vel_z_D4/CLK"
+        ]
+      },
+      "delay_signals_D13_Q": {
+        "ports": [
+          "delay_signals_D13/Q",
+          "o_delay_signals"
+        ]
+      },
+      "frc_to_acceleration_x_m_axis_result_tdata": {
+        "ports": [
+          "frc_to_acceleration_x/m_axis_result_tdata",
+          "acceleration_to_vel_x/s_axis_a_tdata"
+        ]
+      },
+      "frc_to_acceleration_y_m_axis_result_tdata": {
+        "ports": [
+          "frc_to_acceleration_y/m_axis_result_tdata",
+          "acceleration_to_vel_y/s_axis_a_tdata"
+        ]
+      },
+      "frc_to_acceleration_y_m_axis_result_tvalid": {
+        "ports": [
+          "frc_to_acceleration_y/m_axis_result_tvalid",
+          "acceleration_to_vel_x/s_axis_a_tvalid",
+          "acceleration_to_vel_x/s_axis_b_tvalid",
+          "acceleration_to_vel_x/s_axis_c_tvalid",
+          "acceleration_to_vel_y/s_axis_a_tvalid",
+          "acceleration_to_vel_y/s_axis_b_tvalid",
+          "acceleration_to_vel_y/s_axis_c_tvalid",
+          "acceleration_to_vel_z/s_axis_a_tvalid",
+          "acceleration_to_vel_z/s_axis_b_tvalid",
+          "acceleration_to_vel_z/s_axis_c_tvalid"
+        ]
+      },
+      "frc_to_acceleration_z_m_axis_result_tdata": {
+        "ports": [
+          "frc_to_acceleration_z/m_axis_result_tdata",
+          "acceleration_to_vel_z/s_axis_a_tdata"
+        ]
+      },
+      "new_vel_x_D4_Q": {
+        "ports": [
+          "new_vel_x_D4/Q",
+          "o_vx"
+        ]
+      },
+      "new_vel_y_D4_Q": {
+        "ports": [
+          "new_vel_y_D4/Q",
+          "o_vy"
+        ]
+      },
+      "new_vel_z_D4_Q": {
+        "ports": [
+          "new_vel_z_D4/Q",
+          "o_vz"
+        ]
+      },
+      "s_axis_a_tdata_0_1": {
+        "ports": [
+          "i_fz",
+          "frc_to_acceleration_z/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_1_1": {
+        "ports": [
+          "i_fy",
+          "frc_to_acceleration_y/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_2_1": {
+        "ports": [
+          "i_fx",
+          "frc_to_acceleration_x/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tvalid_0_1": {
+        "ports": [
+          "i_valid",
+          "frc_to_acceleration_x/s_axis_a_tvalid",
+          "frc_to_acceleration_x/s_axis_b_tvalid",
+          "frc_to_acceleration_y/s_axis_a_tvalid",
+          "frc_to_acceleration_y/s_axis_b_tvalid",
+          "frc_to_acceleration_z/s_axis_a_tvalid",
+          "frc_to_acceleration_z/s_axis_b_tvalid"
+        ]
+      },
+      "s_axis_b_tdata_0_1": {
+        "ports": [
+          "i_time_step",
+          "acceleration_to_vel_x/s_axis_b_tdata",
+          "acceleration_to_vel_y/s_axis_b_tdata",
+          "acceleration_to_vel_z/s_axis_b_tdata",
+          "vel_to_dx/s_axis_b_tdata",
+          "vel_to_dy/s_axis_b_tdata",
+          "vel_to_dz/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_b_tdata_1_1": {
+        "ports": [
+          "i_coeff",
+          "frc_to_acceleration_x/s_axis_b_tdata",
+          "frc_to_acceleration_y/s_axis_b_tdata",
+          "frc_to_acceleration_z/s_axis_b_tdata"
+        ]
+      },
+      "vel_to_pos_x_m_axis_result_tdata": {
+        "ports": [
+          "vel_to_dx/m_axis_result_tdata",
+          "o_dx"
+        ]
+      },
+      "vel_to_pos_x_m_axis_result_tvalid": {
+        "ports": [
+          "vel_to_dx/m_axis_result_tvalid",
+          "o_data_valid"
+        ]
+      },
+      "vel_to_pos_y_m_axis_result_tdata": {
+        "ports": [
+          "vel_to_dy/m_axis_result_tdata",
+          "o_dy"
+        ]
+      },
+      "vel_to_pos_z_m_axis_result_tdata": {
+        "ports": [
+          "vel_to_dz/m_axis_result_tdata",
+          "o_dz"
+        ]
+      },
+      "vel_x_D3_Q": {
+        "ports": [
+          "vel_x_D4/Q",
+          "acceleration_to_vel_x/s_axis_c_tdata"
+        ]
+      },
+      "vel_y_D3_Q": {
+        "ports": [
+          "vel_y_D4/Q",
+          "acceleration_to_vel_y/s_axis_c_tdata"
+        ]
+      },
+      "vel_z_D3_Q": {
+        "ports": [
+          "vel_z_D4/Q",
+          "acceleration_to_vel_z/s_axis_c_tdata"
+        ]
+      }
+    }
+  }
+}

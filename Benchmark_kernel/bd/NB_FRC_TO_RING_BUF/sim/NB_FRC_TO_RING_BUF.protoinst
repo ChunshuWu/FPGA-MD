@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"NB_FRC_TO_RING_BUF": {
+			"proto_instances": {
+			}
+		}
+	}
+}

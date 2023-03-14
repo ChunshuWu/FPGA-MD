@@ -1,0 +1,27 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/_x/reports/krnl_s2mm
+	Log files: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/_x/logs/krnl_s2mm
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/_x.xilinx_u280_xdma_201920_3/krnl_s2mm.xo.compile_summary, at Wed Oct  5 21:11:40 2022
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Wed Oct  5 21:11:40 2022
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/_x/reports/krnl_s2mm/v++_compile_krnl_s2mm_guidance.html', at Wed Oct  5 21:11:42 2022
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/hw/xilinx_u280_xdma_201920_3.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-1302] Platform 'xilinx_u280_xdma_201920_3.xpfm' has been explicitly enabled for this release.
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'krnl_s2mm'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: krnl_s2mm Log file: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/_x/krnl_s2mm/krnl_s2mm/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_66_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_66_1'
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 411.00 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/_x/reports/krnl_s2mm/system_estimate_krnl_s2mm.xtxt
+INFO: [v++ 60-586] Created _x.xilinx_u280_xdma_201920_3/krnl_s2mm.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/_x.xilinx_u280_xdma_201920_3/krnl_s2mm.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 42s
+INFO: [v++ 60-1653] Closing dispatch client.

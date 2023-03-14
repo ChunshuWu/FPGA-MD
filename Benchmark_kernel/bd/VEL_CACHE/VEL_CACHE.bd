@@ -1,0 +1,171 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xADB3503238DD110A",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "VEL_CACHE",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vel_cache": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "VEL_CACHE_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rd_addr": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "vel_in": {
+        "direction": "I",
+        "left": "95",
+        "right": "0"
+      },
+      "vel_out": {
+        "direction": "O",
+        "left": "95",
+        "right": "0"
+      },
+      "wr_addr": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "wr_en": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "vel_cache": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "VEL_CACHE_vel_cache_0",
+        "xci_path": "ip/VEL_CACHE_vel_cache_0/VEL_CACHE_vel_cache_0.xci",
+        "inst_hier_path": "vel_cache",
+        "parameters": {
+          "Assume_Synchronous_Clk": {
+            "value": "true"
+          },
+          "Collision_Warnings": {
+            "value": "ALL"
+          },
+          "Disable_Collision_Warnings": {
+            "value": "false"
+          },
+          "Disable_Out_of_Range_Warnings": {
+            "value": "false"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_B": {
+            "value": "Always_Enabled"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Simple_Dual_Port_RAM"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Port_B_Clock": {
+            "value": "100"
+          },
+          "Port_B_Enable_Rate": {
+            "value": "100"
+          },
+          "Read_Width_B": {
+            "value": "96"
+          },
+          "Register_PortB_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "512"
+          },
+          "Write_Width_A": {
+            "value": "96"
+          },
+          "Write_Width_B": {
+            "value": "96"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "nets": {
+      "addra_0_1": {
+        "ports": [
+          "wr_addr",
+          "vel_cache/addra"
+        ]
+      },
+      "addrb_0_1": {
+        "ports": [
+          "rd_addr",
+          "vel_cache/addrb"
+        ]
+      },
+      "clka_0_1": {
+        "ports": [
+          "clk",
+          "vel_cache/clka",
+          "vel_cache/clkb"
+        ]
+      },
+      "dina_0_1": {
+        "ports": [
+          "vel_in",
+          "vel_cache/dina"
+        ]
+      },
+      "ena_0_1": {
+        "ports": [
+          "wr_en",
+          "vel_cache/ena",
+          "vel_cache/wea"
+        ]
+      },
+      "vel_cache_doutb": {
+        "ports": [
+          "vel_cache/doutb",
+          "vel_out"
+        ]
+      }
+    }
+  }
+}

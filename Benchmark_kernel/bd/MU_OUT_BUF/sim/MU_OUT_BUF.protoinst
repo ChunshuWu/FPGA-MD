@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"MU_OUT_BUF": {
+			"proto_instances": {
+			}
+		}
+	}
+}

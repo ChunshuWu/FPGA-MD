@@ -1,0 +1,502 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Oct  5 21:11:16 2022
+# Process ID: 26478
+# Current directory: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel
+# Command line: vivado -mode batch -source package_MD_RL_gen.tcl -notrace -tclargs _x.xilinx_u280_xdma_201920_3/MD_RL.xo MD_RL xilinx_u280_xdma_201920_3
+# Log file: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/vivado.log
+# Journal file: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/vivado.jou
+# Running On: caadlab-01, OS: Linux, CPU Frequency: 1256.872 MHz, CPU Physical cores: 12, Host memory: 135057 MB
+#-----------------------------------------------------------
+source package_MD_RL_gen.tcl -notrace
+INFO: xoname-> _x.xilinx_u280_xdma_201920_3/MD_RL.xo
+      krnl_name-> MD_RL
+      device-> xilinx_u280_xdma_201920_3
+
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2847.039 ; gain = 2.020 ; free physical = 81314 ; free virtual = 115459
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/POS_CACHE/POS_CACHE.bd> 
+create_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2915.824 ; gain = 25.539 ; free physical = 81120 ; free virtual = 115429
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:blk_mem_gen:8.4  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+create_bd_cell: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2915.824 ; gain = 0.000 ; free physical = 80705 ; free virtual = 115335
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/addra> is being overridden by the user with net <addra_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/addrb> is being overridden by the user with net <addrb_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTB>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/doutb> is being overridden by the user with net <blk_mem_gen_0_doutb>. This pin will not be connected as a part of interface connection <BRAM_PORTB>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/clka> is being overridden by the user with net <clka_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/clkb> is being overridden by the user with net <clka_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTB>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/dina> is being overridden by the user with net <dina_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/ena> is being overridden by the user with net <ena_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/wea> is being overridden by the user with net <ena_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </blk_mem_gen_1/enb> is being overridden by the user with net <enb_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTB>.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_1> to default.
+WARNING: [xilinx.com:ip:blk_mem_gen:8.4-1] /blk_mem_gen_1 Block Memory Generator IP is configured to use UltraRAM, but UltraRAM does not support Memory Initialization, hence elf association or Initialization of the memory through .coe or .mem  files is not possible
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/POS_CACHE/POS_CACHE.bd> 
+INFO: [BD 41-1662] The design 'POS_CACHE.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/POS_CACHE/synth/POS_CACHE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/POS_CACHE/sim/POS_CACHE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/POS_CACHE/hdl/POS_CACHE_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/POS_CACHE/hw_handoff/POS_CACHE.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/POS_CACHE/synth/POS_CACHE.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NETWORK_OUT_FIFO/NETWORK_OUT_FIFO.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:fifo_generator:13.2  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/din> is being overridden by the user with net <din_0_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/dout> is being overridden by the user with net <fifo_generator_0_dout>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/empty> is being overridden by the user with net <fifo_generator_0_empty>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/rd_en> is being overridden by the user with net <rd_en_0_1>. This pin will not be connected as a part of interface connection <FIFO_READ>.
+WARNING: [BD 41-1306] The connection to interface pin </fifo_generator_0/wr_en> is being overridden by the user with net <wr_en_0_1>. This pin will not be connected as a part of interface connection <FIFO_WRITE>.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NETWORK_OUT_FIFO/NETWORK_OUT_FIFO.bd> 
+INFO: [BD 41-1662] The design 'NETWORK_OUT_FIFO.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NETWORK_OUT_FIFO/synth/NETWORK_OUT_FIFO.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NETWORK_OUT_FIFO/sim/NETWORK_OUT_FIFO.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NETWORK_OUT_FIFO/hdl/NETWORK_OUT_FIFO_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NETWORK_OUT_FIFO/hw_handoff/NETWORK_OUT_FIFO.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NETWORK_OUT_FIFO/synth/NETWORK_OUT_FIFO.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_RSQUARE/FP_RSQUARE.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:floating_point:7.1 xilinx.com:ip:c_shift_ram:12.0  .
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/m_axis_result_tdata> is being overridden by the user with net <dx2_dy2_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/s_axis_c_tdata> is being overridden by the user with net <dx2_dy2_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_C>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/m_axis_result_tvalid> is being overridden by the user with net <dx2_dy2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/s_axis_a_tvalid> is being overridden by the user with net <dx2_dy2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/s_axis_b_tvalid> is being overridden by the user with net <dx2_dy2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/s_axis_c_tvalid> is being overridden by the user with net <dx2_dy2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_C>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2/m_axis_result_tdata> is being overridden by the user with net <dx2_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/s_axis_c_tdata> is being overridden by the user with net <dx2_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_C>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2/m_axis_result_tvalid> is being overridden by the user with net <dx2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/s_axis_a_tvalid> is being overridden by the user with net <dx2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/s_axis_b_tvalid> is being overridden by the user with net <dx2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/s_axis_c_tvalid> is being overridden by the user with net <dx2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_C>.
+WARNING: [BD 41-1306] The connection to interface pin </dx/m_axis_result_tdata> is being overridden by the user with net <dx_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2/s_axis_a_tdata> is being overridden by the user with net <dx_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2/s_axis_b_tdata> is being overridden by the user with net <dx_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dx/m_axis_result_tvalid> is being overridden by the user with net <dx_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2/s_axis_a_tvalid> is being overridden by the user with net <dx_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2/s_axis_b_tvalid> is being overridden by the user with net <dx_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/s_axis_a_tdata> is being overridden by the user with net <dy_d4_Q>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dx2_dy2/s_axis_b_tdata> is being overridden by the user with net <dy_d4_Q>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dy/m_axis_result_tdata> is being overridden by the user with net <dy_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/s_axis_a_tdata> is being overridden by the user with net <dz_d9_Q>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/s_axis_b_tdata> is being overridden by the user with net <dz_d9_Q>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dz/m_axis_result_tdata> is being overridden by the user with net <dz_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/m_axis_result_tdata> is being overridden by the user with net <r2_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </r2/m_axis_result_tvalid> is being overridden by the user with net <r2_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </dx/s_axis_a_tdata> is being overridden by the user with net <s_axis_a_tdata_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dy/s_axis_a_tdata> is being overridden by the user with net <s_axis_a_tdata_0_2>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dz/s_axis_a_tdata> is being overridden by the user with net <s_axis_a_tdata_0_3>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dx/s_axis_a_tvalid> is being overridden by the user with net <s_axis_a_tvalid_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dy/s_axis_a_tvalid> is being overridden by the user with net <s_axis_a_tvalid_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dz/s_axis_a_tvalid> is being overridden by the user with net <s_axis_a_tvalid_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </dx/s_axis_b_tdata> is being overridden by the user with net <s_axis_b_tdata_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dy/s_axis_b_tdata> is being overridden by the user with net <s_axis_b_tdata_0_2>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dz/s_axis_b_tdata> is being overridden by the user with net <s_axis_b_tdata_0_3>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dx/s_axis_b_tvalid> is being overridden by the user with net <s_axis_b_tvalid_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dy/s_axis_b_tvalid> is being overridden by the user with net <s_axis_b_tvalid_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </dz/s_axis_b_tvalid> is being overridden by the user with net <s_axis_b_tvalid_0_1>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /dx_d28 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /dy_d4 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /dy_d24 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /dz_d9 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /dz_d19 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /elements_d25 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /home_parid_d36 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /nb_cid_d36 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /nb_parid_d36 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /nb_reg_release_sel_d36 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /nb_reg_sel_d36 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_RSQUARE/FP_RSQUARE.bd> 
+INFO: [BD 41-1662] The design 'FP_RSQUARE.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_RSQUARE/synth/FP_RSQUARE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_RSQUARE/sim/FP_RSQUARE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_RSQUARE/hdl/FP_RSQUARE_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dx2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dx2_dy2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dx_d28 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dy .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dy_d4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dy_d24 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dz_d9 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dz_d19 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block elements_d25 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block home_parid_d36 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nb_cid_d36 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nb_parid_d36 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nb_reg_release_sel_d36 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nb_reg_sel_d36 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block r2 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_RSQUARE/hw_handoff/FP_RSQUARE.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_RSQUARE/synth/FP_RSQUARE.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/FORCE_LUT.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:blk_mem_gen:8.4  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [IP_Flow 19-3484] Absolute path of file '/home/chunshu/Documents/InterFPGA_MD/Benchmark_kernel/src/mem_init/c0_8.coe' provided. It will be converted relative to IP Instance files '../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c0_8.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file '/home/chunshu/Documents/InterFPGA_MD/Benchmark_kernel/src/mem_init/c0_14.coe' provided. It will be converted relative to IP Instance files '../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c0_14.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file '/home/chunshu/Documents/InterFPGA_MD/Benchmark_kernel/src/mem_init/c1_8.coe' provided. It will be converted relative to IP Instance files '../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c1_8.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file '/home/chunshu/Documents/InterFPGA_MD/Benchmark_kernel/src/mem_init/c1_14.coe' provided. It will be converted relative to IP Instance files '../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c1_14.coe'
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_14/douta> is being overridden by the user with net <FORCE_LUT_0_14_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_8/douta> is being overridden by the user with net <FORCE_LUT_0_8_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_14/douta> is being overridden by the user with net <FORCE_LUT_1_14_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_8/douta> is being overridden by the user with net <FORCE_LUT_1_8_douta>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_14/addra> is being overridden by the user with net <addra_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_8/addra> is being overridden by the user with net <addra_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_14/addra> is being overridden by the user with net <addra_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_8/addra> is being overridden by the user with net <addra_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_14/clka> is being overridden by the user with net <clka_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_8/clka> is being overridden by the user with net <clka_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_14/clka> is being overridden by the user with net <clka_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_8/clka> is being overridden by the user with net <clka_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_14/dina> is being overridden by the user with net <dina_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_8/dina> is being overridden by the user with net <dina_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_14/dina> is being overridden by the user with net <dina_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_8/dina> is being overridden by the user with net <dina_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_14/ena> is being overridden by the user with net <ena_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_8/ena> is being overridden by the user with net <ena_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_14/ena> is being overridden by the user with net <ena_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_8/ena> is being overridden by the user with net <ena_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_14/wea> is being overridden by the user with net <wea_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_0_8/wea> is being overridden by the user with net <wea_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_14/wea> is being overridden by the user with net <wea_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+WARNING: [BD 41-1306] The connection to interface pin </FORCE_LUT_1_8/wea> is being overridden by the user with net <wea_0_1>. This pin will not be connected as a part of interface connection <BRAM_PORTA>.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/FORCE_LUT.bd> 
+WARNING: [BD::TCL 103-2053] This Tcl script was generated from a block design that has not been validated. It is possible that design <FORCE_LUT> may result in errors during validation.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </FORCE_LUT_1_14> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </FORCE_LUT_1_8> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </FORCE_LUT_0_14> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </FORCE_LUT_0_8> to default.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/FORCE_LUT.bd> 
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/synth/FORCE_LUT.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/sim/FORCE_LUT.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/hdl/FORCE_LUT_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FORCE_LUT_0_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FORCE_LUT_0_14 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FORCE_LUT_1_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FORCE_LUT_1_14 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/hw_handoff/FORCE_LUT.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_LUT/synth/FORCE_LUT.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_COMPUTE/FORCE_COMPUTE.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:floating_point:7.1  .
+WARNING: [BD 41-1306] The connection to interface pin </MUL_ADD_TERM_14/m_axis_result_tdata> is being overridden by the user with net <MUL_ADD_TERM_14_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_14/s_axis_b_tdata> is being overridden by the user with net <MUL_ADD_TERM_14_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_ADD_TERM_8/m_axis_result_tdata> is being overridden by the user with net <MUL_ADD_TERM_8_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_8/s_axis_b_tdata> is being overridden by the user with net <MUL_ADD_TERM_8_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_ADD_TERM_8/m_axis_result_tvalid> is being overridden by the user with net <MUL_ADD_TERM_8_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_14/s_axis_a_tvalid> is being overridden by the user with net <MUL_ADD_TERM_8_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_14/s_axis_b_tvalid> is being overridden by the user with net <MUL_ADD_TERM_8_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_8/s_axis_a_tvalid> is being overridden by the user with net <MUL_ADD_TERM_8_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_8/s_axis_b_tvalid> is being overridden by the user with net <MUL_ADD_TERM_8_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_14/m_axis_result_tdata> is being overridden by the user with net <MUL_COEFF_14_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </SUB_BASE_FORCE/s_axis_a_tdata> is being overridden by the user with net <MUL_COEFF_14_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_14/m_axis_result_tvalid> is being overridden by the user with net <MUL_COEFF_14_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </SUB_BASE_FORCE/s_axis_b_tvalid> is being overridden by the user with net <MUL_COEFF_14_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_8/m_axis_result_tdata> is being overridden by the user with net <MUL_COEFF_8_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </SUB_BASE_FORCE/s_axis_b_tdata> is being overridden by the user with net <MUL_COEFF_8_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_COEFF_8/m_axis_result_tvalid> is being overridden by the user with net <MUL_COEFF_8_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </SUB_BASE_FORCE/s_axis_a_tvalid> is being overridden by the user with net <MUL_COEFF_8_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <S_AXIS_A>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_FY/m_axis_result_tdata> is being overridden by the user with net <MUL_FX1_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_FZ/m_axis_result_tdata> is being overridden by the user with net <MUL_FX2_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_FX/m_axis_result_tdata> is being overridden by the user with net <MUL_FX_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_FY/m_axis_result_tvalid> is being overridden by the user with net <MUL_FY_m_axis_result_tvalid>. This pin will not be connected as a part of interface connection <M_AXIS_RESULT>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_FX/s_axis_b_tdata> is being overridden by the user with net <SUB_BASE_FORCE_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_FY/s_axis_b_tdata> is being overridden by the user with net <SUB_BASE_FORCE_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+WARNING: [BD 41-1306] The connection to interface pin </MUL_FZ/s_axis_b_tdata> is being overridden by the user with net <SUB_BASE_FORCE_m_axis_result_tdata>. This pin will not be connected as a part of interface connection <S_AXIS_B>.
+INFO: [Common 17-14] Message 'BD 41-1306' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_COMPUTE/FORCE_COMPUTE.bd> 
+INFO: [BD 41-1662] The design 'FORCE_COMPUTE.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_COMPUTE/synth/FORCE_COMPUTE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_COMPUTE/sim/FORCE_COMPUTE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_COMPUTE/hdl/FORCE_COMPUTE_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUL_ADD_TERM_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUL_ADD_TERM_14 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUL_COEFF_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUL_COEFF_14 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUL_FX .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUL_FY .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUL_FZ .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SUB_BASE_FORCE .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_COMPUTE/hw_handoff/FORCE_COMPUTE.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_COMPUTE/synth/FORCE_COMPUTE.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_ADD_XYZ_D3/FP_ADD_XYZ_D3.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:c_shift_ram:12.0 xilinx.com:ip:floating_point:7.1  .
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /c_shift_ram_0 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_ADD_XYZ_D3/FP_ADD_XYZ_D3.bd> 
+INFO: [BD 41-1662] The design 'FP_ADD_XYZ_D3.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_ADD_XYZ_D3/synth/FP_ADD_XYZ_D3.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_ADD_XYZ_D3/sim/FP_ADD_XYZ_D3.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_ADD_XYZ_D3/hdl/FP_ADD_XYZ_D3_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_shift_ram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_2 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_ADD_XYZ_D3/hw_handoff/FP_ADD_XYZ_D3.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FP_ADD_XYZ_D3/synth/FP_ADD_XYZ_D3.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_86W512D/FIFO_86W512D.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:fifo_generator:13.2  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_86W512D/FIFO_86W512D.bd> 
+INFO: [BD 41-1662] The design 'FIFO_86W512D.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_86W512D/synth/FIFO_86W512D.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_86W512D/sim/FIFO_86W512D.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_86W512D/hdl/FIFO_86W512D_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_86W512D/hw_handoff/FIFO_86W512D.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_86W512D/synth/FIFO_86W512D.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_9W512D/FIFO_9W512D.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:fifo_generator:13.2  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_9W512D/FIFO_9W512D.bd> 
+INFO: [BD 41-1662] The design 'FIFO_9W512D.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_9W512D/synth/FIFO_9W512D.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_9W512D/sim/FIFO_9W512D.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_9W512D/hdl/FIFO_9W512D_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_9W512D/hw_handoff/FIFO_9W512D.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FIFO_9W512D/synth/FIFO_9W512D.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_OUTPUT_RING_BUF/FORCE_OUTPUT_RING_BUF.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:fifo_generator:13.2  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /frc_fifoExecuting the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /frc_fifoExecuting the post_config_ip from bd
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_OUTPUT_RING_BUF/FORCE_OUTPUT_RING_BUF.bd> 
+INFO: [BD 41-1662] The design 'FORCE_OUTPUT_RING_BUF.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_OUTPUT_RING_BUF/synth/FORCE_OUTPUT_RING_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_OUTPUT_RING_BUF/sim/FORCE_OUTPUT_RING_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_OUTPUT_RING_BUF/hdl/FORCE_OUTPUT_RING_BUF_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frc_fifo .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_OUTPUT_RING_BUF/hw_handoff/FORCE_OUTPUT_RING_BUF.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FORCE_OUTPUT_RING_BUF/synth/FORCE_OUTPUT_RING_BUF.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_ADD_XYZ/FRC_ADD_XYZ.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:floating_point:7.1  .
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_ADD_XYZ/FRC_ADD_XYZ.bd> 
+INFO: [BD 41-1662] The design 'FRC_ADD_XYZ.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_ADD_XYZ/synth/FRC_ADD_XYZ.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_ADD_XYZ/sim/FRC_ADD_XYZ.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_ADD_XYZ/hdl/FRC_ADD_XYZ_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_2 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_ADD_XYZ/hw_handoff/FRC_ADD_XYZ.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_ADD_XYZ/synth/FRC_ADD_XYZ.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/FRC_CACHE_INPUT_BUF.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:fifo_generator:13.2  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /frc_fifoExecuting the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /frc_fifoExecuting the post_config_ip from bd
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/FRC_CACHE_INPUT_BUF.bd> 
+WARNING: [BD::TCL 103-2053] This Tcl script was generated from a block design that has not been validated. It is possible that design <FRC_CACHE_INPUT_BUF> may result in errors during validation.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/FRC_CACHE_INPUT_BUF.bd> 
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/synth/FRC_CACHE_INPUT_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/sim/FRC_CACHE_INPUT_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/hdl/FRC_CACHE_INPUT_BUF_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frc_fifo .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/hw_handoff/FRC_CACHE_INPUT_BUF.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHE_INPUT_BUF/synth/FRC_CACHE_INPUT_BUF.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/FRC_CACHES.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:blk_mem_gen:8.4  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/FRC_CACHES.bd> 
+WARNING: [BD::TCL 103-2053] This Tcl script was generated from a block design that has not been validated. It is possible that design <FRC_CACHES> may result in errors during validation.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </frc_cache> to default.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/FRC_CACHES.bd> 
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/synth/FRC_CACHES.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/sim/FRC_CACHES.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/hdl/FRC_CACHES_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frc_cache .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/hw_handoff/FRC_CACHES.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/FRC_CACHES/synth/FRC_CACHES.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_OUT_BUF/MU_OUT_BUF.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:fifo_generator:13.2  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /MU_fifoExecuting the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /MU_fifoExecuting the post_config_ip from bd
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_OUT_BUF/MU_OUT_BUF.bd> 
+INFO: [BD 41-1662] The design 'MU_OUT_BUF.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_OUT_BUF/synth/MU_OUT_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_OUT_BUF/sim/MU_OUT_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_OUT_BUF/hdl/MU_OUT_BUF_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MU_fifo .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_OUT_BUF/hw_handoff/MU_OUT_BUF.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_OUT_BUF/synth/MU_OUT_BUF.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/MU_PIPELINE.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:floating_point:7.1 xilinx.com:ip:c_shift_ram:12.0  .
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/MU_PIPELINE.bd> 
+WARNING: [BD::TCL 103-2053] This Tcl script was generated from a block design that has not been validated. It is possible that design <MU_PIPELINE> may result in errors during validation.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /delay_signals_D13 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /new_vel_x_D4 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /new_vel_y_D4 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /new_vel_z_D4 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /vel_x_D4 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /vel_y_D4 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_shift_ram:12.0-913] /vel_z_D4 Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/MU_PIPELINE.bd> 
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/synth/MU_PIPELINE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/sim/MU_PIPELINE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/hdl/MU_PIPELINE_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acceleration_to_vel_x .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acceleration_to_vel_y .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acceleration_to_vel_z .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block delay_signals_D13 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frc_to_acceleration_x .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frc_to_acceleration_y .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frc_to_acceleration_z .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block new_vel_x_D4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block new_vel_y_D4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block new_vel_z_D4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vel_to_dx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vel_to_dy .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vel_to_dz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vel_x_D4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vel_y_D4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vel_z_D4 .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/hw_handoff/MU_PIPELINE.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/MU_PIPELINE/synth/MU_PIPELINE.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/VEL_CACHE.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:blk_mem_gen:8.4  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/VEL_CACHE.bd> 
+WARNING: [BD::TCL 103-2053] This Tcl script was generated from a block design that has not been validated. It is possible that design <VEL_CACHE> may result in errors during validation.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </vel_cache> to default.
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/VEL_CACHE.bd> 
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/synth/VEL_CACHE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/sim/VEL_CACHE.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/hdl/VEL_CACHE_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vel_cache .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/hw_handoff/VEL_CACHE.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/VEL_CACHE/synth/VEL_CACHE.hwdef
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NB_FRC_TO_RING_BUF/NB_FRC_TO_RING_BUF.bd> 
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:fifo_generator:13.2  .
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /frc_fifoExecuting the post_config_ip from bd
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /frc_fifoExecuting the post_config_ip from bd
+Wrote  : </home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NB_FRC_TO_RING_BUF/NB_FRC_TO_RING_BUF.bd> 
+INFO: [BD 41-1662] The design 'NB_FRC_TO_RING_BUF.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NB_FRC_TO_RING_BUF/synth/NB_FRC_TO_RING_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NB_FRC_TO_RING_BUF/sim/NB_FRC_TO_RING_BUF.v
+VHDL Output written to : /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NB_FRC_TO_RING_BUF/hdl/NB_FRC_TO_RING_BUF_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frc_fifo .
+Exporting to file /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NB_FRC_TO_RING_BUF/hw_handoff/NB_FRC_TO_RING_BUF.hwh
+Generated Hardware Definition File /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/bd/NB_FRC_TO_RING_BUF/synth/NB_FRC_TO_RING_BUF.hwdef
+update_compile_order: Time (s): cpu = 00:00:35 ; elapsed = 00:00:07 . Memory (MB): peak = 3740.223 ; gain = 824.398 ; free physical = 79847 ; free virtual = 115099
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'MU_PIPELINE' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FRC_ADD_XYZ' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'MU_OUT_BUF' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'NB_FRC_TO_RING_BUF' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FP_ADD_XYZ_D3' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FORCE_COMPUTE' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FORCE_LUT' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FP_RSQUARE' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'POS_CACHE' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FIFO_9W512D' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FIFO_86W512D' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'VEL_CACHE' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FRC_CACHES' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FRC_CACHE_INPUT_BUF' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'FORCE_OUTPUT_RING_BUF' - hence not re-generating.
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'NETWORK_OUT_FIFO' - hence not re-generating.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/all_pos_caches_tb.v'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/MD_wrapper_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/MU_out_buf_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/PE_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/RAW_handler.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/all_pos_caches_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/all_velocity_caches_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/check_pos_input_ring_target_hit_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/dump_pos.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/dump_pos_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/filter_dispatcher_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/force_cache_control_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/force_cache_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/force_output_ring_node_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/force_output_ring_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/force_pipeline.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/force_pipeline_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/force_reg_controller.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/motion_update_control_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/motion_update_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/network_interface_pos_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/number_generator.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/partial_force_acc_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/pos_cache_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/pos_input_ring_node_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/pos_input_ring_tb.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/reg_select.sv'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/src/ring_and_PEs_tb.sv'.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/sim/FORCE_LUT_FORCE_LUT_0_14_0/FORCE_LUT_FORCE_LUT_0_14_0.xci. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/sim/FORCE_LUT_FORCE_LUT_0_8_0/FORCE_LUT_FORCE_LUT_0_8_0.xci. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/sim/FORCE_LUT_FORCE_LUT_1_14_0/FORCE_LUT_FORCE_LUT_1_14_0.xci. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/sim/FORCE_LUT_FORCE_LUT_1_8_0/FORCE_LUT_FORCE_LUT_1_8_0.xci. It will be created.
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'POS_CACHE_INSTANCE' [/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/src/all_pos_caches.sv:54]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/src/all_pos_caches.sv:54]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'VELOCITY_CACHE_INSTANCE' [/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/src/all_velocity_caches.sv:39]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/packaged_kernel_MD_RL_xilinx_u280_xdma_201920_3/src/all_velocity_caches.sv:39]
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'ELEMENT_WIDTH' by 2 for port or parameter 'pos_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PARTICLE_ID_WIDTH' by 9 for port or parameter 'pos_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OFFSET_WIDTH' by 23 for port or parameter 'offset_data_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'ELEMENT_WIDTH' by 2 for port or parameter 'offset_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PARTICLE_ID_WIDTH' by 9 for port or parameter 'offset_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'FLOAT_WIDTH' by 32 for port or parameter 'float_data_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'CELL_ID_WIDTH' by 2 for port or parameter 'force_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PARTICLE_ID_WIDTH' by 9 for port or parameter 'force_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'ELEMENT_WIDTH' by 2 for port or parameter 'MU_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'AXIS_TDATA_WIDTH' by 512 for port or parameter 'pos_ring_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'AXIS_TDATA_WIDTH' by 512 for port or parameter 'axi_packet_t'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STREAMING_TDEST_WIDTH' by 16 for port or parameter 'axi_packet_t'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS_k2h' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS_k2n_frc' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS_k2n_pos' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS_h2k' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS_n2k_frc' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS_n2k_pos' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIL' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'ap_rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'ap_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'ap_rst_n'.
+WARNING: [IP_Flow 19-3158] Bus Interface 'M_AXIS_k2h': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'M_AXIS_k2n_frc': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'M_AXIS_k2n_pos': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'S_AXIS_h2k': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'S_AXIS_n2k_frc': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'S_AXIS_n2k_pos': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'S_AXIL': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3157] Bus Interface 'ap_rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'ap_rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'ap_clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::package_project: Time (s): cpu = 00:01:10 ; elapsed = 00:00:15 . Memory (MB): peak = 3740.223 ; gain = 0.000 ; free physical = 79824 ; free virtual = 115081
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:47 ; elapsed = 00:01:06 . Memory (MB): peak = 3740.223 ; gain = 0.000 ; free physical = 79584 ; free virtual = 114885
+INFO: [IP_Flow 19-4728] Bus Interface 'ap_clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXIS_n2k_pos'.
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+WARNING: [Vivado 12-12407] VLNV in kernel.xml does not match VLNV in any of the IPs specified with the ip_directory option: xilinx.com:kernel:MD_RL:1.0
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  5 21:14:39 2022...

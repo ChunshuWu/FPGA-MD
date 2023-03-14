@@ -1,0 +1,256 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x5E88D113A13A302E",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "FRC_ADD_XYZ",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "floating_point_0": "",
+      "floating_point_1": "",
+      "floating_point_2": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "FRC_ADD_XYZ_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "frc_acc_valid": {
+        "direction": "O"
+      },
+      "frc_acc_x": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_acc_y": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_acc_z": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_valid_1": {
+        "direction": "I"
+      },
+      "frc_valid_2": {
+        "direction": "I"
+      },
+      "frc_x1": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_x2": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_y1": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_y2": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_z1": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "frc_z2": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "floating_point_0": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FRC_ADD_XYZ_floating_point_0_0",
+        "xci_path": "ip/FRC_ADD_XYZ_floating_point_0_0/FRC_ADD_XYZ_floating_point_0_0.xci",
+        "inst_hier_path": "floating_point_0",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "3"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          }
+        }
+      },
+      "floating_point_1": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FRC_ADD_XYZ_floating_point_1_0",
+        "xci_path": "ip/FRC_ADD_XYZ_floating_point_1_0/FRC_ADD_XYZ_floating_point_1_0.xci",
+        "inst_hier_path": "floating_point_1",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "3"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          }
+        }
+      },
+      "floating_point_2": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FRC_ADD_XYZ_floating_point_2_0",
+        "xci_path": "ip/FRC_ADD_XYZ_floating_point_2_0/FRC_ADD_XYZ_floating_point_2_0.xci",
+        "inst_hier_path": "floating_point_2",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "3"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "aclk_0_1": {
+        "ports": [
+          "clk",
+          "floating_point_0/aclk",
+          "floating_point_1/aclk",
+          "floating_point_2/aclk"
+        ]
+      },
+      "floating_point_0_m_axis_result_tdata": {
+        "ports": [
+          "floating_point_0/m_axis_result_tdata",
+          "frc_acc_x"
+        ]
+      },
+      "floating_point_1_m_axis_result_tdata": {
+        "ports": [
+          "floating_point_1/m_axis_result_tdata",
+          "frc_acc_y"
+        ]
+      },
+      "floating_point_1_m_axis_result_tvalid": {
+        "ports": [
+          "floating_point_1/m_axis_result_tvalid",
+          "frc_acc_valid"
+        ]
+      },
+      "floating_point_2_m_axis_result_tdata": {
+        "ports": [
+          "floating_point_2/m_axis_result_tdata",
+          "frc_acc_z"
+        ]
+      },
+      "s_axis_a_tdata_0_1": {
+        "ports": [
+          "frc_z1",
+          "floating_point_2/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_1_1": {
+        "ports": [
+          "frc_y1",
+          "floating_point_1/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_2_1": {
+        "ports": [
+          "frc_x1",
+          "floating_point_0/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tvalid_0_1": {
+        "ports": [
+          "frc_valid_1",
+          "floating_point_0/s_axis_a_tvalid",
+          "floating_point_1/s_axis_a_tvalid",
+          "floating_point_2/s_axis_a_tvalid"
+        ]
+      },
+      "s_axis_b_tdata_0_1": {
+        "ports": [
+          "frc_z2",
+          "floating_point_2/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_b_tdata_1_1": {
+        "ports": [
+          "frc_y2",
+          "floating_point_1/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_b_tdata_2_1": {
+        "ports": [
+          "frc_x2",
+          "floating_point_0/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_b_tvalid_0_1": {
+        "ports": [
+          "frc_valid_2",
+          "floating_point_0/s_axis_b_tvalid",
+          "floating_point_1/s_axis_b_tvalid",
+          "floating_point_2/s_axis_b_tvalid"
+        ]
+      }
+    }
+  }
+}

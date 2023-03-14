@@ -1,0 +1,904 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7A6DDC2A5E578978",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "FP_RSQUARE",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "dx": "",
+      "dx2": "",
+      "dx2_dy2": "",
+      "dx_d28": "",
+      "dy": "",
+      "dy_d4": "",
+      "dy_d24": "",
+      "dz": "",
+      "dz_d9": "",
+      "dz_d19": "",
+      "elements_d25": "",
+      "home_parid_d36": "",
+      "nb_cid_d36": "",
+      "nb_parid_d36": "",
+      "nb_reg_release_sel_d36": "",
+      "nb_reg_sel_d36": "",
+      "r2": ""
+    },
+    "ports": {
+      "aclk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "FP_RSQUARE_aclk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "d25_elements": {
+        "type": "data",
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 4} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 4}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "d36_home_parid": {
+        "type": "data",
+        "direction": "O",
+        "left": "8",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 9} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 9}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "d36_nb_cid": {
+        "type": "data",
+        "direction": "O",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 6} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 6}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "d36_nb_parid": {
+        "type": "data",
+        "direction": "O",
+        "left": "8",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 9} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 9}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "d36_nb_reg_release_flag": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 1}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "d36_nb_reg_sel": {
+        "type": "data",
+        "direction": "O",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 6} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 6}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "dx": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 32}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "dy": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 32}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "dz": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency data_bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} DATA_WIDTH 32}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "elements": {
+        "type": "data",
+        "direction": "I",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "home_parid": {
+        "type": "data",
+        "direction": "I",
+        "left": "8",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "home_valid": {
+        "direction": "I"
+      },
+      "home_x": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "home_y": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "home_z": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "nb_cid": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "nb_parid": {
+        "type": "data",
+        "direction": "I",
+        "left": "8",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "nb_reg_release_flag": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "nb_reg_sel": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "nb_valid": {
+        "direction": "I"
+      },
+      "nb_x": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "nb_y": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "nb_z": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "r2": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "r2_valid": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "dx": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FP_RSQUARE_dx_0",
+        "xci_path": "ip/FP_RSQUARE_dx_0/FP_RSQUARE_dx_0.xci",
+        "inst_hier_path": "dx",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Subtract"
+          },
+          "C_Latency": {
+            "value": "3"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Optimization": {
+            "value": "Speed_Optimized"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          }
+        }
+      },
+      "dx2": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FP_RSQUARE_dx2_0",
+        "xci_path": "ip/FP_RSQUARE_dx2_0/FP_RSQUARE_dx2_0.xci",
+        "inst_hier_path": "dx2",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "dx2_dy2": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FP_RSQUARE_dx2_dy2_0",
+        "xci_path": "ip/FP_RSQUARE_dx2_dy2_0/FP_RSQUARE_dx2_dy2_0.xci",
+        "inst_hier_path": "dx2_dy2",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "5"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "FMA"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "dx_d28": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_dx_d28_0",
+        "xci_path": "ip/FP_RSQUARE_dx_d28_0/FP_RSQUARE_dx_d28_0.xci",
+        "inst_hier_path": "dx_d28",
+        "parameters": {
+          "Depth": {
+            "value": "28"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "dy": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FP_RSQUARE_dy_0",
+        "xci_path": "ip/FP_RSQUARE_dy_0/FP_RSQUARE_dy_0.xci",
+        "inst_hier_path": "dy",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Subtract"
+          },
+          "C_Latency": {
+            "value": "3"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Optimization": {
+            "value": "Speed_Optimized"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          }
+        }
+      },
+      "dy_d4": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_dy_d4_0",
+        "xci_path": "ip/FP_RSQUARE_dy_d4_0/FP_RSQUARE_dy_d4_0.xci",
+        "inst_hier_path": "dy_d4",
+        "parameters": {
+          "Depth": {
+            "value": "4"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "dy_d24": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_dy_d24_0",
+        "xci_path": "ip/FP_RSQUARE_dy_d24_0/FP_RSQUARE_dy_d24_0.xci",
+        "inst_hier_path": "dy_d24",
+        "parameters": {
+          "Depth": {
+            "value": "24"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "dz": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FP_RSQUARE_dz_0",
+        "xci_path": "ip/FP_RSQUARE_dz_0/FP_RSQUARE_dz_0.xci",
+        "inst_hier_path": "dz",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Subtract"
+          },
+          "C_Latency": {
+            "value": "3"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Optimization": {
+            "value": "Speed_Optimized"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          }
+        }
+      },
+      "dz_d9": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_dz_d9_0",
+        "xci_path": "ip/FP_RSQUARE_dz_d9_0/FP_RSQUARE_dz_d9_0.xci",
+        "inst_hier_path": "dz_d9",
+        "parameters": {
+          "Depth": {
+            "value": "9"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "dz_d19": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_dz_d19_0",
+        "xci_path": "ip/FP_RSQUARE_dz_d19_0/FP_RSQUARE_dz_d19_0.xci",
+        "inst_hier_path": "dz_d19",
+        "parameters": {
+          "Depth": {
+            "value": "19"
+          },
+          "Width": {
+            "value": "32"
+          }
+        }
+      },
+      "elements_d25": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_elements_d25_0",
+        "xci_path": "ip/FP_RSQUARE_elements_d25_0/FP_RSQUARE_elements_d25_0.xci",
+        "inst_hier_path": "elements_d25",
+        "parameters": {
+          "Depth": {
+            "value": "25"
+          },
+          "Width": {
+            "value": "4"
+          }
+        }
+      },
+      "home_parid_d36": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_home_parid_d36_0",
+        "xci_path": "ip/FP_RSQUARE_home_parid_d36_0/FP_RSQUARE_home_parid_d36_0.xci",
+        "inst_hier_path": "home_parid_d36",
+        "parameters": {
+          "Depth": {
+            "value": "36"
+          },
+          "Width": {
+            "value": "9"
+          }
+        }
+      },
+      "nb_cid_d36": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_nb_cid_d36_0",
+        "xci_path": "ip/FP_RSQUARE_nb_cid_d36_0/FP_RSQUARE_nb_cid_d36_0.xci",
+        "inst_hier_path": "nb_cid_d36",
+        "parameters": {
+          "Depth": {
+            "value": "36"
+          },
+          "Width": {
+            "value": "6"
+          }
+        }
+      },
+      "nb_parid_d36": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_nb_parid_d36_0",
+        "xci_path": "ip/FP_RSQUARE_nb_parid_d36_0/FP_RSQUARE_nb_parid_d36_0.xci",
+        "inst_hier_path": "nb_parid_d36",
+        "parameters": {
+          "Depth": {
+            "value": "36"
+          },
+          "Width": {
+            "value": "9"
+          }
+        }
+      },
+      "nb_reg_release_sel_d36": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_nb_reg_release_sel_d36_0",
+        "xci_path": "ip/FP_RSQUARE_nb_reg_release_sel_d36_0/FP_RSQUARE_nb_reg_release_sel_d36_0.xci",
+        "inst_hier_path": "nb_reg_release_sel_d36",
+        "parameters": {
+          "Depth": {
+            "value": "36"
+          },
+          "Width": {
+            "value": "1"
+          }
+        }
+      },
+      "nb_reg_sel_d36": {
+        "vlnv": "xilinx.com:ip:c_shift_ram:12.0",
+        "xci_name": "FP_RSQUARE_nb_reg_sel_d36_0",
+        "xci_path": "ip/FP_RSQUARE_nb_reg_sel_d36_0/FP_RSQUARE_nb_reg_sel_d36_0.xci",
+        "inst_hier_path": "nb_reg_sel_d36",
+        "parameters": {
+          "Depth": {
+            "value": "36"
+          },
+          "Width": {
+            "value": "6"
+          }
+        }
+      },
+      "r2": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FP_RSQUARE_r2_0",
+        "xci_path": "ip/FP_RSQUARE_r2_0/FP_RSQUARE_r2_0.xci",
+        "inst_hier_path": "r2",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "5"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "FMA"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      }
+    },
+    "nets": {
+      "D_0_1": {
+        "ports": [
+          "nb_parid",
+          "nb_parid_d36/D"
+        ]
+      },
+      "D_0_2": {
+        "ports": [
+          "elements",
+          "elements_d25/D"
+        ]
+      },
+      "D_0_3": {
+        "ports": [
+          "nb_cid",
+          "nb_cid_d36/D"
+        ]
+      },
+      "D_0_4": {
+        "ports": [
+          "nb_reg_sel",
+          "nb_reg_sel_d36/D"
+        ]
+      },
+      "D_1_1": {
+        "ports": [
+          "home_parid",
+          "home_parid_d36/D"
+        ]
+      },
+      "D_1_2": {
+        "ports": [
+          "nb_reg_release_flag",
+          "nb_reg_release_sel_d36/D"
+        ]
+      },
+      "aclk_0_1": {
+        "ports": [
+          "aclk",
+          "dx/aclk",
+          "dx2/aclk",
+          "dx2_dy2/aclk",
+          "dx_d28/CLK",
+          "dy/aclk",
+          "dy_d24/CLK",
+          "dy_d4/CLK",
+          "dz/aclk",
+          "dz_d19/CLK",
+          "dz_d9/CLK",
+          "elements_d25/CLK",
+          "home_parid_d36/CLK",
+          "nb_cid_d36/CLK",
+          "nb_parid_d36/CLK",
+          "nb_reg_release_sel_d36/CLK",
+          "nb_reg_sel_d36/CLK",
+          "r2/aclk"
+        ]
+      },
+      "dx2_dy2_m_axis_result_tdata": {
+        "ports": [
+          "dx2_dy2/m_axis_result_tdata",
+          "r2/s_axis_c_tdata"
+        ]
+      },
+      "dx2_dy2_m_axis_result_tvalid": {
+        "ports": [
+          "dx2_dy2/m_axis_result_tvalid",
+          "r2/s_axis_a_tvalid",
+          "r2/s_axis_b_tvalid",
+          "r2/s_axis_c_tvalid"
+        ]
+      },
+      "dx2_m_axis_result_tdata": {
+        "ports": [
+          "dx2/m_axis_result_tdata",
+          "dx2_dy2/s_axis_c_tdata"
+        ]
+      },
+      "dx2_m_axis_result_tvalid": {
+        "ports": [
+          "dx2/m_axis_result_tvalid",
+          "dx2_dy2/s_axis_a_tvalid",
+          "dx2_dy2/s_axis_b_tvalid",
+          "dx2_dy2/s_axis_c_tvalid"
+        ]
+      },
+      "dx_d14_Q": {
+        "ports": [
+          "dx_d28/Q",
+          "dx"
+        ]
+      },
+      "dx_m_axis_result_tdata": {
+        "ports": [
+          "dx/m_axis_result_tdata",
+          "dx2/s_axis_a_tdata",
+          "dx2/s_axis_b_tdata",
+          "dx_d28/D"
+        ]
+      },
+      "dx_m_axis_result_tvalid": {
+        "ports": [
+          "dx/m_axis_result_tvalid",
+          "dx2/s_axis_a_tvalid",
+          "dx2/s_axis_b_tvalid"
+        ]
+      },
+      "dy_d10_Q": {
+        "ports": [
+          "dy_d24/Q",
+          "dy"
+        ]
+      },
+      "dy_d4_Q": {
+        "ports": [
+          "dy_d4/Q",
+          "dx2_dy2/s_axis_a_tdata",
+          "dx2_dy2/s_axis_b_tdata",
+          "dy_d24/D"
+        ]
+      },
+      "dy_m_axis_result_tdata": {
+        "ports": [
+          "dy/m_axis_result_tdata",
+          "dy_d4/D"
+        ]
+      },
+      "dz_d5_Q": {
+        "ports": [
+          "dz_d19/Q",
+          "dz"
+        ]
+      },
+      "dz_d9_Q": {
+        "ports": [
+          "dz_d9/Q",
+          "dz_d19/D",
+          "r2/s_axis_a_tdata",
+          "r2/s_axis_b_tdata"
+        ]
+      },
+      "dz_m_axis_result_tdata": {
+        "ports": [
+          "dz/m_axis_result_tdata",
+          "dz_d9/D"
+        ]
+      },
+      "elements_d18_Q": {
+        "ports": [
+          "elements_d25/Q",
+          "d25_elements"
+        ]
+      },
+      "home_parid_d17_Q": {
+        "ports": [
+          "home_parid_d36/Q",
+          "d36_home_parid"
+        ]
+      },
+      "home_parid_d18_Q": {
+        "ports": [
+          "nb_parid_d36/Q",
+          "d36_nb_parid"
+        ]
+      },
+      "nb_cid_d36_Q": {
+        "ports": [
+          "nb_cid_d36/Q",
+          "d36_nb_cid"
+        ]
+      },
+      "nb_reg_release_sel_d36_Q": {
+        "ports": [
+          "nb_reg_release_sel_d36/Q",
+          "d36_nb_reg_release_flag"
+        ]
+      },
+      "nb_reg_sel_d37_Q": {
+        "ports": [
+          "nb_reg_sel_d36/Q",
+          "d36_nb_reg_sel"
+        ]
+      },
+      "r2_m_axis_result_tdata": {
+        "ports": [
+          "r2/m_axis_result_tdata",
+          "r2"
+        ]
+      },
+      "r2_m_axis_result_tvalid": {
+        "ports": [
+          "r2/m_axis_result_tvalid",
+          "r2_valid"
+        ]
+      },
+      "s_axis_a_tdata_0_1": {
+        "ports": [
+          "home_x",
+          "dx/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_0_2": {
+        "ports": [
+          "home_y",
+          "dy/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_0_3": {
+        "ports": [
+          "home_z",
+          "dz/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tvalid_0_1": {
+        "ports": [
+          "home_valid",
+          "dx/s_axis_a_tvalid",
+          "dy/s_axis_a_tvalid",
+          "dz/s_axis_a_tvalid"
+        ]
+      },
+      "s_axis_b_tdata_0_1": {
+        "ports": [
+          "nb_x",
+          "dx/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_b_tdata_0_2": {
+        "ports": [
+          "nb_y",
+          "dy/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_b_tdata_0_3": {
+        "ports": [
+          "nb_z",
+          "dz/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_b_tvalid_0_1": {
+        "ports": [
+          "nb_valid",
+          "dx/s_axis_b_tvalid",
+          "dy/s_axis_b_tvalid",
+          "dz/s_axis_b_tvalid"
+        ]
+      }
+    }
+  }
+}

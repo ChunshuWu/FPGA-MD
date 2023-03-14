@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"FIFO_9W512D": {
+			"proto_instances": {
+			}
+		}
+	}
+}

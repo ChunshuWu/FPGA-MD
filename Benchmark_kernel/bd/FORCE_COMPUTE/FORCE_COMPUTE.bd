@@ -1,0 +1,614 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x400727A8ADCA615A",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "FORCE_COMPUTE",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "MUL_ADD_TERM_8": "",
+      "MUL_ADD_TERM_14": "",
+      "MUL_COEFF_8": "",
+      "MUL_COEFF_14": "",
+      "MUL_FX": "",
+      "MUL_FY": "",
+      "MUL_FZ": "",
+      "SUB_BASE_FORCE": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "FORCE_COMPUTE_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "coeff_8": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "coeff_14": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "dx": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dy": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dz": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "frc_valid": {
+        "direction": "O"
+      },
+      "fx": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "fy": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "fz": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "r2": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "term_0_8": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "term_0_14": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "term_1_8": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "term_1_14": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "term_valid": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "MUL_ADD_TERM_8": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_MUL_ADD_TERM_8_0",
+        "xci_path": "ip/FORCE_COMPUTE_MUL_ADD_TERM_8_0/FORCE_COMPUTE_MUL_ADD_TERM_8_0.xci",
+        "inst_hier_path": "MUL_ADD_TERM_8",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "5"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "FMA"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "MUL_ADD_TERM_14": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_MUL_ADD_TERM_14_0",
+        "xci_path": "ip/FORCE_COMPUTE_MUL_ADD_TERM_14_0/FORCE_COMPUTE_MUL_ADD_TERM_14_0.xci",
+        "inst_hier_path": "MUL_ADD_TERM_14",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Add"
+          },
+          "C_Latency": {
+            "value": "5"
+          },
+          "C_Mult_Usage": {
+            "value": "Medium_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "FMA"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "MUL_COEFF_8": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_MUL_COEFF_8_0",
+        "xci_path": "ip/FORCE_COMPUTE_MUL_COEFF_8_0/FORCE_COMPUTE_MUL_COEFF_8_0.xci",
+        "inst_hier_path": "MUL_COEFF_8",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "MUL_COEFF_14": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_MUL_COEFF_14_0",
+        "xci_path": "ip/FORCE_COMPUTE_MUL_COEFF_14_0/FORCE_COMPUTE_MUL_COEFF_14_0.xci",
+        "inst_hier_path": "MUL_COEFF_14",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "MUL_FX": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_MUL_FX_0",
+        "xci_path": "ip/FORCE_COMPUTE_MUL_FX_0/FORCE_COMPUTE_MUL_FX_0.xci",
+        "inst_hier_path": "MUL_FX",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "MUL_FY": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_MUL_FY_0",
+        "xci_path": "ip/FORCE_COMPUTE_MUL_FY_0/FORCE_COMPUTE_MUL_FY_0.xci",
+        "inst_hier_path": "MUL_FY",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "MUL_FZ": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_MUL_FZ_0",
+        "xci_path": "ip/FORCE_COMPUTE_MUL_FZ_0/FORCE_COMPUTE_MUL_FZ_0.xci",
+        "inst_hier_path": "MUL_FZ",
+        "parameters": {
+          "C_Latency": {
+            "value": "4"
+          },
+          "C_Mult_Usage": {
+            "value": "Full_Usage"
+          },
+          "C_Rate": {
+            "value": "1"
+          },
+          "C_Result_Exponent_Width": {
+            "value": "8"
+          },
+          "C_Result_Fraction_Width": {
+            "value": "24"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          },
+          "Operation_Type": {
+            "value": "Multiply"
+          },
+          "Result_Precision_Type": {
+            "value": "Single"
+          }
+        }
+      },
+      "SUB_BASE_FORCE": {
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "xci_name": "FORCE_COMPUTE_SUB_BASE_FORCE_0",
+        "xci_path": "ip/FORCE_COMPUTE_SUB_BASE_FORCE_0/FORCE_COMPUTE_SUB_BASE_FORCE_0.xci",
+        "inst_hier_path": "SUB_BASE_FORCE",
+        "parameters": {
+          "Add_Sub_Value": {
+            "value": "Subtract"
+          },
+          "C_Latency": {
+            "value": "3"
+          },
+          "Flow_Control": {
+            "value": "NonBlocking"
+          },
+          "Has_RESULT_TREADY": {
+            "value": "false"
+          },
+          "Maximum_Latency": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "MUL_ADD_TERM_14_m_axis_result_tdata": {
+        "ports": [
+          "MUL_ADD_TERM_14/m_axis_result_tdata",
+          "MUL_COEFF_14/s_axis_b_tdata"
+        ]
+      },
+      "MUL_ADD_TERM_8_m_axis_result_tdata": {
+        "ports": [
+          "MUL_ADD_TERM_8/m_axis_result_tdata",
+          "MUL_COEFF_8/s_axis_b_tdata"
+        ]
+      },
+      "MUL_ADD_TERM_8_m_axis_result_tvalid": {
+        "ports": [
+          "MUL_ADD_TERM_8/m_axis_result_tvalid",
+          "MUL_COEFF_14/s_axis_a_tvalid",
+          "MUL_COEFF_14/s_axis_b_tvalid",
+          "MUL_COEFF_8/s_axis_a_tvalid",
+          "MUL_COEFF_8/s_axis_b_tvalid"
+        ]
+      },
+      "MUL_COEFF_14_m_axis_result_tdata": {
+        "ports": [
+          "MUL_COEFF_14/m_axis_result_tdata",
+          "SUB_BASE_FORCE/s_axis_a_tdata"
+        ]
+      },
+      "MUL_COEFF_14_m_axis_result_tvalid": {
+        "ports": [
+          "MUL_COEFF_14/m_axis_result_tvalid",
+          "SUB_BASE_FORCE/s_axis_b_tvalid"
+        ]
+      },
+      "MUL_COEFF_8_m_axis_result_tdata": {
+        "ports": [
+          "MUL_COEFF_8/m_axis_result_tdata",
+          "SUB_BASE_FORCE/s_axis_b_tdata"
+        ]
+      },
+      "MUL_COEFF_8_m_axis_result_tvalid": {
+        "ports": [
+          "MUL_COEFF_8/m_axis_result_tvalid",
+          "SUB_BASE_FORCE/s_axis_a_tvalid"
+        ]
+      },
+      "MUL_FX1_m_axis_result_tdata": {
+        "ports": [
+          "MUL_FY/m_axis_result_tdata",
+          "fy"
+        ]
+      },
+      "MUL_FX2_m_axis_result_tdata": {
+        "ports": [
+          "MUL_FZ/m_axis_result_tdata",
+          "fz"
+        ]
+      },
+      "MUL_FX_m_axis_result_tdata": {
+        "ports": [
+          "MUL_FX/m_axis_result_tdata",
+          "fx"
+        ]
+      },
+      "MUL_FY_m_axis_result_tvalid": {
+        "ports": [
+          "MUL_FY/m_axis_result_tvalid",
+          "frc_valid"
+        ]
+      },
+      "SUB_BASE_FORCE_m_axis_result_tdata": {
+        "ports": [
+          "SUB_BASE_FORCE/m_axis_result_tdata",
+          "MUL_FX/s_axis_b_tdata",
+          "MUL_FY/s_axis_b_tdata",
+          "MUL_FZ/s_axis_b_tdata"
+        ]
+      },
+      "SUB_BASE_FORCE_m_axis_result_tvalid": {
+        "ports": [
+          "SUB_BASE_FORCE/m_axis_result_tvalid",
+          "MUL_FX/s_axis_a_tvalid",
+          "MUL_FX/s_axis_b_tvalid",
+          "MUL_FY/s_axis_a_tvalid",
+          "MUL_FY/s_axis_b_tvalid",
+          "MUL_FZ/s_axis_a_tvalid",
+          "MUL_FZ/s_axis_b_tvalid"
+        ]
+      },
+      "aclk_0_1": {
+        "ports": [
+          "clk",
+          "MUL_ADD_TERM_14/aclk",
+          "MUL_ADD_TERM_8/aclk",
+          "MUL_COEFF_14/aclk",
+          "MUL_COEFF_8/aclk",
+          "MUL_FX/aclk",
+          "MUL_FY/aclk",
+          "MUL_FZ/aclk",
+          "SUB_BASE_FORCE/aclk"
+        ]
+      },
+      "dx_1": {
+        "ports": [
+          "dx",
+          "MUL_FX/s_axis_a_tdata"
+        ]
+      },
+      "dy_1": {
+        "ports": [
+          "dy",
+          "MUL_FY/s_axis_a_tdata"
+        ]
+      },
+      "dz_1": {
+        "ports": [
+          "dz",
+          "MUL_FZ/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_0_1": {
+        "ports": [
+          "term_1_14",
+          "MUL_ADD_TERM_14/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_0_2": {
+        "ports": [
+          "coeff_8",
+          "MUL_COEFF_8/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_0_3": {
+        "ports": [
+          "coeff_14",
+          "MUL_COEFF_14/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tdata_1_1": {
+        "ports": [
+          "term_1_8",
+          "MUL_ADD_TERM_8/s_axis_a_tdata"
+        ]
+      },
+      "s_axis_a_tvalid_0_1": {
+        "ports": [
+          "term_valid",
+          "MUL_ADD_TERM_14/s_axis_a_tvalid",
+          "MUL_ADD_TERM_14/s_axis_b_tvalid",
+          "MUL_ADD_TERM_14/s_axis_c_tvalid",
+          "MUL_ADD_TERM_8/s_axis_a_tvalid",
+          "MUL_ADD_TERM_8/s_axis_b_tvalid",
+          "MUL_ADD_TERM_8/s_axis_c_tvalid"
+        ]
+      },
+      "s_axis_b_tdata_0_1": {
+        "ports": [
+          "r2",
+          "MUL_ADD_TERM_14/s_axis_b_tdata",
+          "MUL_ADD_TERM_8/s_axis_b_tdata"
+        ]
+      },
+      "s_axis_c_tdata_0_1": {
+        "ports": [
+          "term_0_8",
+          "MUL_ADD_TERM_8/s_axis_c_tdata"
+        ]
+      },
+      "s_axis_c_tdata_1_1": {
+        "ports": [
+          "term_0_14",
+          "MUL_ADD_TERM_14/s_axis_c_tdata"
+        ]
+      }
+    }
+  }
+}

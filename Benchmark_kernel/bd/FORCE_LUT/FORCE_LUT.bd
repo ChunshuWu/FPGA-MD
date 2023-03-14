@@ -1,0 +1,346 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA26289FC3CFCC37",
+      "device": "xcu280-fsvh2892-2L-e",
+      "name": "FORCE_LUT",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "FORCE_LUT_0_8": "",
+      "FORCE_LUT_0_14": "",
+      "FORCE_LUT_1_8": "",
+      "FORCE_LUT_1_14": ""
+    },
+    "ports": {
+      "addr": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "FORCE_LUT_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "data_in": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "rd_en": {
+        "direction": "I"
+      },
+      "term_0_8": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "term_0_14": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "term_1_8": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "term_1_14": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "wr_en": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "FORCE_LUT_0_8": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "FORCE_LUT_FORCE_LUT_0_8_0",
+        "xci_path": "ip/FORCE_LUT_FORCE_LUT_0_8_0/FORCE_LUT_FORCE_LUT_0_8_0.xci",
+        "inst_hier_path": "FORCE_LUT_0_8",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c0_8.coe"
+          },
+          "Collision_Warnings": {
+            "value": "NONE"
+          },
+          "Disable_Collision_Warnings": {
+            "value": "true"
+          },
+          "Disable_Out_of_Range_Warnings": {
+            "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Use_ENA_Pin"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "2560"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "FORCE_LUT_0_14": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "FORCE_LUT_FORCE_LUT_0_14_0",
+        "xci_path": "ip/FORCE_LUT_FORCE_LUT_0_14_0/FORCE_LUT_FORCE_LUT_0_14_0.xci",
+        "inst_hier_path": "FORCE_LUT_0_14",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c0_14.coe"
+          },
+          "Collision_Warnings": {
+            "value": "NONE"
+          },
+          "Disable_Collision_Warnings": {
+            "value": "true"
+          },
+          "Disable_Out_of_Range_Warnings": {
+            "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Use_ENA_Pin"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "2560"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "FORCE_LUT_1_8": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "FORCE_LUT_FORCE_LUT_1_8_0",
+        "xci_path": "ip/FORCE_LUT_FORCE_LUT_1_8_0/FORCE_LUT_FORCE_LUT_1_8_0.xci",
+        "inst_hier_path": "FORCE_LUT_1_8",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c1_8.coe"
+          },
+          "Collision_Warnings": {
+            "value": "NONE"
+          },
+          "Disable_Collision_Warnings": {
+            "value": "true"
+          },
+          "Disable_Out_of_Range_Warnings": {
+            "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Use_ENA_Pin"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "2560"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "FORCE_LUT_1_14": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "FORCE_LUT_FORCE_LUT_1_14_0",
+        "xci_path": "ip/FORCE_LUT_FORCE_LUT_1_14_0/FORCE_LUT_FORCE_LUT_1_14_0.xci",
+        "inst_hier_path": "FORCE_LUT_1_14",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../InterFPGA_MD/Benchmark_kernel/src/mem_init/c1_14.coe"
+          },
+          "Collision_Warnings": {
+            "value": "NONE"
+          },
+          "Disable_Collision_Warnings": {
+            "value": "true"
+          },
+          "Disable_Out_of_Range_Warnings": {
+            "value": "true"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Use_ENA_Pin"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "NO_CHANGE"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "2560"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "nets": {
+      "FORCE_LUT_0_14_douta": {
+        "ports": [
+          "FORCE_LUT_0_14/douta",
+          "term_0_14"
+        ]
+      },
+      "FORCE_LUT_0_8_douta": {
+        "ports": [
+          "FORCE_LUT_0_8/douta",
+          "term_0_8"
+        ]
+      },
+      "FORCE_LUT_1_14_douta": {
+        "ports": [
+          "FORCE_LUT_1_14/douta",
+          "term_1_14"
+        ]
+      },
+      "FORCE_LUT_1_8_douta": {
+        "ports": [
+          "FORCE_LUT_1_8/douta",
+          "term_1_8"
+        ]
+      },
+      "addra_0_1": {
+        "ports": [
+          "addr",
+          "FORCE_LUT_0_14/addra",
+          "FORCE_LUT_0_8/addra",
+          "FORCE_LUT_1_14/addra",
+          "FORCE_LUT_1_8/addra"
+        ]
+      },
+      "clka_0_1": {
+        "ports": [
+          "clk",
+          "FORCE_LUT_0_14/clka",
+          "FORCE_LUT_0_8/clka",
+          "FORCE_LUT_1_14/clka",
+          "FORCE_LUT_1_8/clka"
+        ]
+      },
+      "dina_0_1": {
+        "ports": [
+          "data_in",
+          "FORCE_LUT_0_14/dina",
+          "FORCE_LUT_0_8/dina",
+          "FORCE_LUT_1_14/dina",
+          "FORCE_LUT_1_8/dina"
+        ]
+      },
+      "ena_0_1": {
+        "ports": [
+          "rd_en",
+          "FORCE_LUT_0_14/ena",
+          "FORCE_LUT_0_8/ena",
+          "FORCE_LUT_1_14/ena",
+          "FORCE_LUT_1_8/ena"
+        ]
+      },
+      "wea_0_1": {
+        "ports": [
+          "wr_en",
+          "FORCE_LUT_0_14/wea",
+          "FORCE_LUT_0_8/wea",
+          "FORCE_LUT_1_14/wea",
+          "FORCE_LUT_1_8/wea"
+        ]
+      }
+    }
+  }
+}

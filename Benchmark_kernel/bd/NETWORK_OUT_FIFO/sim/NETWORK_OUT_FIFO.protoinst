@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"NETWORK_OUT_FIFO": {
+			"proto_instances": {
+			}
+		}
+	}
+}

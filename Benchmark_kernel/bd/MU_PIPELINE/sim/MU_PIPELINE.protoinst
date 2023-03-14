@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"MU_PIPELINE": {
+			"proto_instances": {
+			}
+		}
+	}
+}

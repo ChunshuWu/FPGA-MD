@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Oct  5 21:11:16 2022
+# Process ID: 26478
+# Current directory: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel
+# Command line: vivado -mode batch -source package_MD_RL_gen.tcl -notrace -tclargs _x.xilinx_u280_xdma_201920_3/MD_RL.xo MD_RL xilinx_u280_xdma_201920_3
+# Log file: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/vivado.log
+# Journal file: /home/chunshu/Documents/InterFPGA_MD_v1_3_5/InterFPGA_MD/Benchmark_kernel/vivado.jou
+# Running On: caadlab-01, OS: Linux, CPU Frequency: 1256.872 MHz, CPU Physical cores: 12, Host memory: 135057 MB
+#-----------------------------------------------------------
+source package_MD_RL_gen.tcl -notrace

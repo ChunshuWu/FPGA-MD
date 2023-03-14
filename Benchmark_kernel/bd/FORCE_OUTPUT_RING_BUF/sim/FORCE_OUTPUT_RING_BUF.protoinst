@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"FORCE_OUTPUT_RING_BUF": {
+			"proto_instances": {
+			}
+		}
+	}
+}
