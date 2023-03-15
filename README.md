@@ -4,9 +4,10 @@ The design is tested on Massachusetts cluster on [cloudlab](https://www.cloudlab
 A simple demo is provided (for 2 U280 boards). 
 ## Overview
 This project aims to accelerate Range-Limited interactions among particles in a simulation space with cut-off. During runtime, the current position data of each particle is used to calculate the resulting force applied to it. These forces are then transformed into velocity differences using classical physics. The particle velocities and positions are then updated from their current values to determine their values in the next time step.  
+  
 The demo provided allows 2 FPGA nodes run the processes described above separately with static communications (Cross-board initialization and data dumping). 27 cells (the small cubes below in the figure) are mapped onto an FPGA. The dynamic communication version (multiple boards running on a larger simulation space together) is not yet released.  
 <img src="https://github.com/ChunshuWu/FPGA-MD/blob/main/cell_intro.png" width=600>  
-The initial particles are arranged as the figure shows below (in 2-D illustration). Generally speaking, each cell only contains ~60 particles (~4 particles along a diagonal line) in water environment, the demo is an extreme case that 15 particles are aligned on a diagonal line of a cell (illustrated below), where the symmetry should be perfect. However, because of the overly high energy, eventually the oscillation of particles is broken due to small error. This demo is just to intuitively show how the particles behave.  
+The initial particles are arranged as the figure shows below (in 2-D illustration). Generally speaking, each cell only contains ~60 particles (~4 particles along a diagonal line) in water environment, the demo is an extreme case that 15 particles are aligned on a diagonal line of a cell (illustrated below), where the symmetry should be perfect. However, because of the overly high energy, eventually the oscillation of particles is broken due to the amplification of small error. This demo is just to intuitively show how the particles behave.  
 <img src="https://github.com/ChunshuWu/FPGA-MD/blob/main/demo.png" width=300>  
 Some example demo results:  
 <img src="https://github.com/ChunshuWu/FPGA-MD/blob/main/velocity_demo.png" width=1000>  
