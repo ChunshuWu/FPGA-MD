@@ -1,0 +1,79 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 31697
+License: Customer
+
+Current time: 	Mon Mar 13 16:57:51 EDT 2023
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 4.15.0-202-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: :12
+Screen size: 1920x1080
+Available screens: 1
+Available disk space: 547 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /tools/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o:/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/tools/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/18:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2021.2/lib/lnx64.o:/tools/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/opt/xilinx/xrt/lib:/opt/xilinx/xrt/lib::/tools/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /tools/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /tools/Xilinx/Vitis
+
+User name: 	chunshu
+User home directory: /home/chunshu
+User working directory: /home/chunshu/Documents/InterFPGA_MD/InterFPGA_MD/Notebooks
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vitis
+HDI_APPROOT: /tools/Xilinx/Vitis/2021.2
+RDI_DATADIR: /tools/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /tools/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/chunshu/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /home/chunshu/Documents/InterFPGA_MD/VitisWorkspace
+Vitis workspace log file location: /home/chunshu/Documents/InterFPGA_MD/VitisWorkspace/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINXD_LICENSE_FILE: 2100@192.168.0.54
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vitis/2021.2
+XILINX_SDK: /tools/Xilinx/Vitis/2021.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2021.2
+XILINX_XRT: /opt/xilinx/xrt
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectMenuItem("Xilinx", "MD_RL", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Launch RTL Kernel Wizard", "MD_RL", "WorkbenchWindow", "MenuItem.LAUNCH_RTL_KERNEL");
+selectMenuItem("1 MD_RL", "MD_RL", "WorkbenchWindow", "MenuItem.1_MD_RL");
+selectRadioButton("Create New RTL Kernel", "MD_RL", "RTLKernelWizardChooserDialog", "Button.CREATE_NEW_RTL_KERNEL");
+selectRadioButton("Edit Existing Kernel Contents", "MD_RL", "RTLKernelWizardChooserDialog", "Button.EDIT_EXISTING_KERNEL");
+selectButton("OK", "MD_RL", "RTLKernelWizardChooserDialog", "Button.OK");
+selectMenuItem("Xilinx", "MD_RL", "WorkbenchWindow", "MenuItem.XILINX");
+selectMenuItem("Launch RTL Kernel Wizard", "MD_RL", "WorkbenchWindow", "MenuItem.LAUNCH_RTL_KERNEL");
+selectMenuItem("1 MD_RL", "MD_RL", "WorkbenchWindow", "MenuItem.1_MD_RL");
+selectRadioButton("Create New RTL Kernel", "MD_RL", "RTLKernelWizardChooserDialog", "Button.CREATE_NEW_RTL_KERNEL");
+selectRadioButton("Edit Existing Kernel Contents", "MD_RL", "RTLKernelWizardChooserDialog", "Button.EDIT_EXISTING_KERNEL");
+selectButton("OK", "MD_RL", "RTLKernelWizardChooserDialog", "Button.OK");
