@@ -1,0 +1,20 @@
+<ForceField>
+  <AtomTypes>
+    <Type class="Na" element="Na" mass="22.99" name="Na"/>
+    <Type class="Cl" element="Cl" mass="35.45" name="Cl"/>
+ </AtomTypes>
+ 
+ <Residues>
+  <Residue name="ABC">
+   <Atom charge="0.0" name="ABC" type="Na"/>
+  </Residue>
+  <Residue name="BCD">
+   <Atom charge="0.0" name="BCD" type="Cl"/>
+  </Residue>
+ </Residues>
+ <NonbondedForce coulomb14scale="0.8333333333333334" lj14scale="0.5">
+  <UseAttributeFromResidue name="charge"/>
+    <Atom epsilon="0.3658460312" sigma="0.2439280690268249" type="Na"/>
+    <Atom epsilon="0.14891274399999999" sigma="0.4477656957373345" type="Cl"/>
+ </NonbondedForce>
+</ForceField>
