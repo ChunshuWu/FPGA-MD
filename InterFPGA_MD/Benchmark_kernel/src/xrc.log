@@ -1,0 +1,14 @@
+Fri Mar 10 17:38:23 2023: Server was asked to start on port: '40283'
+Fri Mar 10 17:38:23 2023: Server is using token UUID: 'f56a2957-8279-4e5c-af73-fa54a518dc32'
+Fri Mar 10 17:38:23 2023: Attempting to start server on port '40283'
+Fri Mar 10 17:38:23 2023: XRC main fifo: created main fifo '/tmp/xrcmainf56a2957-8279-4e5c-af73-fa54a518dc32', fd read = 11
+Fri Mar 10 17:38:23 2023: Running Rule Check Server
+Fri Mar 10 17:38:23 2023: Version 1.6.1
+Fri Mar 10 17:38:24 2023: Rule Check Server: Accepted socket connection from client
+Fri Mar 10 17:38:24 2023: EXCHANGE_TOKEN received, server token: f56a2957-8279-4e5c-af73-fa54a518dc32, passed token: f56a2957-8279-4e5c-af73-fa54a518dc32
+Sat Mar 11 12:41:18 2023: STOP_SERVER received, server token: f56a2957-8279-4e5c-af73-fa54a518dc32, passed token: f56a2957-8279-4e5c-af73-fa54a518dc32
+Sat Mar 11 12:41:18 2023: Socket received request to stop server.
+Sat Mar 11 12:41:18 2023: SERVER: destructor for server bound to port 40283
+Sat Mar 11 12:41:18 2023: XRC main fifo: Good unlink of /tmp/xrcmainf56a2957-8279-4e5c-af73-fa54a518dc32
+Sat Mar 11 12:41:18 2023: Server exiting with status 0.
+Sat Mar 11 12:41:18 2023: Closing log file.

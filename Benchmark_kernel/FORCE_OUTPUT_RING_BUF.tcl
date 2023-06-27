@@ -189,30 +189,32 @@ proc create_root_design { parentCell } {
   # Create ports
   set almost_full [ create_bd_port -dir O almost_full ]
   set clk [ create_bd_port -dir I -type clk clk ]
-  set data_out [ create_bd_port -dir O -from 111 -to 0 data_out ]
+  set data_out [ create_bd_port -dir O -from 114 -to 0 data_out ]
   set empty [ create_bd_port -dir O empty ]
   set rd_en [ create_bd_port -dir I rd_en ]
   set rst [ create_bd_port -dir I rst ]
-  set wr_data [ create_bd_port -dir I -from 111 -to 0 wr_data ]
+  set wr_data [ create_bd_port -dir I -from 114 -to 0 wr_data ]
   set wr_en [ create_bd_port -dir I wr_en ]
 
   # Create instance: frc_fifo, and set properties
   set frc_fifo [ create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.2 frc_fifo ]
   set_property -dict [ list \
-   CONFIG.Data_Count_Width {9} \
+   CONFIG.Data_Count_Width {5} \
    CONFIG.Empty_Threshold_Assert_Value {4} \
    CONFIG.Empty_Threshold_Negate_Value {5} \
-   CONFIG.Full_Threshold_Assert_Value {500} \
-   CONFIG.Full_Threshold_Negate_Value {499} \
-   CONFIG.Input_Data_Width {112} \
-   CONFIG.Input_Depth {512} \
-   CONFIG.Output_Data_Width {112} \
-   CONFIG.Output_Depth {512} \
+   CONFIG.Fifo_Implementation {Common_Clock_Distributed_RAM} \
+   CONFIG.Full_Threshold_Assert_Value {15} \
+   CONFIG.Full_Threshold_Negate_Value {14} \
+   CONFIG.Input_Data_Width {115} \
+   CONFIG.Input_Depth {16} \
+   CONFIG.Output_Data_Width {115} \
+   CONFIG.Output_Depth {16} \
    CONFIG.Performance_Options {First_Word_Fall_Through} \
    CONFIG.Programmable_Full_Type {Single_Programmable_Full_Threshold_Constant} \
-   CONFIG.Read_Data_Count_Width {9} \
-   CONFIG.Use_Embedded_Registers {true} \
-   CONFIG.Write_Data_Count_Width {9} \
+   CONFIG.Read_Data_Count_Width {5} \
+   CONFIG.Use_Embedded_Registers {false} \
+   CONFIG.Use_Extra_Logic {true} \
+   CONFIG.Write_Data_Count_Width {5} \
  ] $frc_fifo
 
   # Create port connections
